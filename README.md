@@ -2,9 +2,9 @@
 
 ### Contact Information:
 
-* Maria Farge: m.rodriguezfarge@gmail.com
-* Sergio Casas: scasap00@gmail.com
-* Josep Brugués: bruguesjosep@outlook.com
+* Maria Rodríguez Farge: m.rodriguezfarge@gmail.com
+* Sergio Casas Pastor: scasap00@gmail.com
+* Josep Brugués i Pujolràs: bruguesjosep@outlook.com
 
 
 ### Project report
