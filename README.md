@@ -2,7 +2,7 @@
 
 ### Contact Information:
 
-* Maria Rodríguez Farge: m.rodriguezfarge@gmail.com
+* Maria Rodríguez-Farge Hijano: m.rodriguezfarge@gmail.com
 * Sergio Casas Pastor: scasap00@gmail.com
 * Josep Brugués i Pujolràs: bruguesjosep@outlook.com
 
