@@ -10,3 +10,7 @@
 ### Project report
 
 * Overleaf link: https://www.overleaf.com/read/mwdkwsjgbckw
+
+### Week 1
+
+* Presentation link: https://docs.google.com/presentation/d/1w7uw6CsAVdg7ICU8hVnPb6MZrFBcE841XXF7KDuq1QI/edit?usp=sharing
