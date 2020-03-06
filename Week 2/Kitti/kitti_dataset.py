@@ -25,7 +25,8 @@ def get_kitti_dataset(img_dir, labels_dir, debug=False):
         'Person_sitting': 4,
         'Cyclist': 5,
         'Tram': 6,
-        'Misc': 7
+        'Misc': 7,
+        'DontCare': 8
     }
 
     images_files = glob.glob(img_dir + '/*.png')
@@ -61,22 +62,21 @@ def get_kitti_dataset(img_dir, labels_dir, debug=False):
 
             objects = []
             for line in lines:
-                line_elements = line.split(' ')
+                elements = line.split(' ')
 
-                if line_elements[0] != 'DontCare':
-                    if debug:
-                        print(line_elements)
+                if debug:
+                    print(elements)
 
-                    obj = {
-                        "bbox": [float(line_elements[4]), float(line_elements[5]), float(line_elements[6]), float(line_elements[7])],
-                        "bbox_mode": BoxMode.XYXY_ABS,
-                        "category_id": categories[line_elements[0]]
-                    }
+                obj = {
+                    "bbox": [float(elements[4]), float(elements[5]), float(elements[6]), float(elements[7])],
+                    "bbox_mode": BoxMode.XYXY_ABS,
+                    "category_id": categories[elements[0]]
+                }
 
-                    if debug:
-                        cv2.rectangle(image, (int(float(line_elements[4])), int(float(line_elements[5]))), (int(float(line_elements[6])), int(float(line_elements[7]))), (255,255,255))
-                        cv2.putText(image, line_elements[0], (int(float(line_elements[4])), int(float(line_elements[5]))), cv2.FONT_HERSHEY_SIMPLEX, 1, (255,255,0), 2, cv2.LINE_AA) 
-                    objects.append(obj)
+                if debug:
+                    cv2.rectangle(image, (int(float(elements[4])), int(float(elements[5]))), (int(float(elements[6])), int(float(elements[7]))), (255,255,255))
+                    cv2.putText(image, elements[0], (int(float(elements[4])), int(float(elements[5]))), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 0), 2, cv2.LINE_AA) 
+                objects.append(obj)
 
             record["annotations"] = objects
             dataset_dicts.append(record)
