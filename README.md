@@ -18,3 +18,7 @@
 ### Week 2
 
 * Presentation link: https://docs.google.com/presentation/d/139hTOGa3nJyRMzJsQs0OkmQZhEgEQnawLdOPwK6lkyc/edit?usp=sharing
+
+* Faster R-CNN folder: object detection on inference using faster R-CNN X101-FPN model
+* RetinaNet folder: object detection on inference using RetinaNet R101 model
+* Kitti folder: object detection by training faster R-CNN on Kitti dataset 
