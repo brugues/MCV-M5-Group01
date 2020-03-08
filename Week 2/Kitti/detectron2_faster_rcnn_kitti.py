@@ -11,11 +11,8 @@ setup_logger()
 
 from detectron2.config import get_cfg
 from detectron2 import model_zoo
-from detectron2.engine import DefaultPredictor
-from detectron2.config import get_cfg
-from detectron2.data import MetadataCatalog
-from detectron2.engine import DefaultTrainer
-from detectron2.data import DatasetCatalog, MetadataCatalog
+from detectron2.engine import DefaultPredictor, DefaultTrainer
+from detectron2.data import MetadataCatalog, DatasetCatalog
 
 # Dataset guardado en pkl file. El script para generar el pickle está en GitHub
 pkl_file = open('./kitti_dataset.pkl', 'rb')
@@ -90,6 +87,7 @@ for image in images:
     instances = outputs['instances'].to('cpu'); instances = instances.get_fields()
     bboxes = instances['pred_boxes']; bboxes = bboxes.tensor.tolist()
     predicted_classes = instances['pred_classes']; predicted_classes.tolist()
+    confidences = instances['scores']; confidences.tolist()
 
     filename = image.split('/')[-1].split('.')[0] + '.txt'
     file = open(os.path.join(PATH, filename), 'w')
@@ -99,14 +97,16 @@ for image in images:
         bbox = bboxes[i]
 
         element_class = categories[int(predicted_class)]
+        confidence = str(float(confidences[i]))
         bbox_low_x = str(bbox[0]) + ' '
         bbox_low_y = str(bbox[1]) + ' '
         bbox_high_x = str(bbox[2]) + ' '
         bbox_high_y = str(bbox[3]) + ' '
 
-        line = element_class + ' 0.0 0.0 0.0 '
+        line = element_class + ' -1 -1 -10 '
         line = line + bbox_low_x + bbox_low_y + bbox_high_x + bbox_high_y
-        line = line + '0.0 0.0 0.0 0.0 0.0 0.0 0.0 \n'
+        line = line + '-1 -1 -1 -1000 -1000 -1000 -10 '
+        line = line + confidence + '\n'
 
         file.write(line)
 

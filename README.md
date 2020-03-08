@@ -14,3 +14,7 @@
 ### Week 1
 
 * Presentation link: https://docs.google.com/presentation/d/1w7uw6CsAVdg7ICU8hVnPb6MZrFBcE841XXF7KDuq1QI/edit?usp=sharing
+
+### Week 2
+
+* Presentation link: https://docs.google.com/presentation/d/139hTOGa3nJyRMzJsQs0OkmQZhEgEQnawLdOPwK6lkyc/edit?usp=sharing
