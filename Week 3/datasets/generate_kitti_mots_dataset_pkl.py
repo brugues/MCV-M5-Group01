@@ -11,7 +11,8 @@ import os
 import pickle
 from detectron2.structures import BoxMode
 
-def generate_dataset_dicts(dataset, text_instances, server):
+
+def generate_dataset_dicts(text_instances, server):
     """ Generates the dataset in COCO format """
 
     dataset_dicts = []
@@ -44,9 +45,9 @@ def generate_dataset_dicts(dataset, text_instances, server):
 
             if lines_id == 0:
                 if server:
-                    record['file_name'] = '../mcv/datasets/' + dataset + '/training/images_02/' + folder + '/' + str(frame_index).zfill(6)
+                    record['file_name'] = '../mcv/datasets/KITTI-MOTS/training/images_02/' + folder + '/' + str(frame_index).zfill(6)
                 else:
-                    record['file_name'] = '../' + dataset + '/training/images_02/' + folder + '/' +str(frame_index).zfill(6)
+                    record['file_name'] = '../KITTI-MOTS/training/images_02/' + folder + '/' +str(frame_index).zfill(6)
                 record['image_id'] = frame_index
                 record['height'] = img_height
                 record['width'] = img_width
@@ -60,9 +61,9 @@ def generate_dataset_dicts(dataset, text_instances, server):
                 objects = []
 
                 if server:
-                    record['file_name'] = '../mcv/datasets/' + dataset + '/training/images_02/' + folder + '/' + str(frame_index).zfill(6) + '.png'
+                    record['file_name'] = '../mcv/datasets/KITTI-MOTS/training/images_02/' + folder + '/' + str(frame_index).zfill(6) + '.png'
                 else:
-                    record['file_name'] = '../' + dataset + '/training/images_02/' + folder + '/' +str(frame_index).zfill(6) + '.png'
+                    record['file_name'] = '../KITTI-MOTS/training/images_02/' + folder + '/' +str(frame_index).zfill(6) + '.png'
                 record['image_id'] = frame_index
                 record['height'] = img_height
                 record['width'] = img_width
@@ -80,53 +81,44 @@ def generate_dataset_dicts(dataset, text_instances, server):
 
 
 def main():
-    #dataset = 'KITTI-MOTS'
-    dataset = 'MOTSChallenge'
-    validation = False
-
     train_dataset_dicts = []
-    if validation:
     val_dataset_dicts = []
 
-    text_instances = glob.glob('../' + dataset + '/instances_txt/*.txt')
+    train_folders = []
+
+    text_instances = glob.glob('../KITTI-MOTS/instances_txt/*.txt')
     text_instances.sort()
 
     train_text_instances = []
+    val_text_instances = []
+    val_folders = ['0002', '0006', '0007', '0008', '0010', '0013', '0014', '0016', '0018']
 
-    if validation:
-        val_text_instances = []
-        val_folders = ['0002', '0006', '0007', '0008', '0010', '0013', '0014', '0016', '0018']
-
-        for text_instance in text_instances:
-            if text_instance.split('/')[-1].split('.')[0] in val_folders:
+    for text_instance in text_instances:
+        if text_instance.split('/')[-1].split('.')[0] in val_folders:
             val_text_instances.append(text_instance)
-            else:
+        else:
             train_text_instances.append(text_instance)
-    else:
-        train_text_instances.append(text_instance)
 
-    local_train_dict = generate_dataset_dicts(dataset, train_text_instances, False)
-    server_train_dict = generate_dataset_dicts(dataset, train_text_instances, True)
-    if validation:
-        local_val_dict = generate_dataset_dicts(dataset, val_text_instances, False)
-        server_val_dict = generate_dataset_dicts(dataset, val_text_instances, True)
+    local_train_dict = generate_dataset_dicts(train_text_instances, False)
+    local_val_dict = generate_dataset_dicts(val_text_instances, False)
+    server_train_dict = generate_dataset_dicts(train_text_instances, True)
+    server_val_dict = generate_dataset_dicts(val_text_instances, True)
 
-    with open('./train_' + dataset + '_dataset_server.pkl', 'wb') as handle:
+    with open('./train_kitti_mots_dataset_server.pkl', 'wb') as handle:
         pickle.dump(server_train_dict, handle)
     handle.close()
 
-    with open('./train_' + dataset + '_dataset_local.pkl', 'wb') as handle:
+    with open('./validation_kitti_mots_dataset_server.pkl', 'wb') as handle:
+        pickle.dump(server_val_dict, handle)
+    handle.close()
+
+    with open('./train_kitti_mots_dataset_local.pkl', 'wb') as handle:
         pickle.dump(local_train_dict, handle)
     handle.close()
 
-    if validation:
-        with open('./validation_' + dataset + '_dataset_server.pkl', 'wb') as handle:
-            pickle.dump(server_val_dict, handle)
-        handle.close()
-
-        with open('./validation_' + dataset + '_dataset_local.pkl', 'wb') as handle:
-            pickle.dump(local_val_dict, handle)
-        handle.close()
+    with open('./validation_kitti_mots_dataset_local.pkl', 'wb') as handle:
+        pickle.dump(local_val_dict, handle)
+    handle.close()
 
 
 if __name__ == '__main__':
