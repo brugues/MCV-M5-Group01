@@ -55,8 +55,8 @@ def generate_dataset_dicts(dataset, text_instances, server):
                         record['file_name'] = '../' + dataset + '/train/images/' + folder + '/' +str(frame_index).zfill(6) + '.jpg'
                             
                 record['image_id'] = frame_index
-                record['height'] = img_height
-                record['width'] = img_width
+                record['height'] = int(img_height)
+                record['width'] = int(img_width)
 
             if int(time_frame) != frame_index:
                 record["annotations"] = objects
@@ -79,24 +79,27 @@ def generate_dataset_dicts(dataset, text_instances, server):
                         record['file_name'] = '../' + dataset + '/train/images/' + folder + '/' +str(frame_index).zfill(6) + '.jpg'
                         
                 record['image_id'] = frame_index
-                record['height'] = img_height
-                record['width'] = img_width
+                record['height'] = int(img_height)
+                record['width'] = int(img_width)
             
             if int(class_id) != 10:
+                bbox[2] += bbox[0]
+                bbox[3] += bbox[1]
+                bbox = [bbox[0], bbox[1], bbox[2], bbox[3]]
                 obj = {
                         "bbox": bbox,
-                        "bbox_mode": BoxMode.XYWH_ABS,
+                        "bbox_mode": BoxMode.XYXY_ABS,
                         "category_id": int(class_id)
                 }
                 objects.append(obj)
             lines_id += 1
-    print(dataset_dicts)
+    #print(dataset_dicts)
     return dataset_dicts
 
 
 def main():
-    dataset = 'KITTI-MOTS'
-    # dataset = 'MOTSChallenge'
+    #dataset = 'KITTI-MOTS'
+    dataset = 'MOTSChallenge'
     validation = True
 
     train_dataset_dicts = []
@@ -104,9 +107,9 @@ def main():
         val_dataset_dicts = []
         
     if dataset == 'KITTI-MOTS':
-        text_instances = glob.glob('../mcv/datasets/' + dataset + '/instances_txt/*.txt')
+        text_instances = glob.glob('../' + dataset + '/instances_txt/*.txt')
     if dataset == 'MOTSChallenge':
-        text_instances = glob.glob('../mcv/datasets/' + dataset + '/train/instances_txt/*.txt')
+        text_instances = glob.glob('../' + dataset + '/train/instances_txt/*.txt')
     text_instances.sort()
 
     train_text_instances = []
@@ -150,7 +153,6 @@ def main():
         with open('./validation_' + dataset + '_dataset_local.pkl', 'wb') as handle:
             pickle.dump(local_val_dict, handle)
         handle.close()
-
 
 if __name__ == '__main__':
     main()
