@@ -45,14 +45,14 @@ def generate_dataset_dicts(dataset, text_instances, server):
             if lines_id == 0:
                 if server:
                     if dataset == 'KITTI-MOTS':
-                        record['file_name'] = '../mcv/datasets/' + dataset + '/training/image_02/' + folder + '/' + str(frame_index).zfill(6)
+                        record['file_name'] = '../mcv/datasets/' + dataset + '/training/image_02/' + folder + '/' + str(frame_index).zfill(6) + '.png'
                     if dataset == 'MOTSChallenge':
-                        record['file_name'] = '../mcv/datasets/' + dataset + '/train/images/' + folder + '/' + str(frame_index).zfill(6)
+                        record['file_name'] = '../mcv/datasets/' + dataset + '/train/images/' + folder + '/' + str(frame_index).zfill(6) + '.jpg'
                 else:
                     if dataset == 'KITTI-MOTS':
-                        record['file_name'] = '../' + dataset + '/training/image_02/' + folder + '/' +str(frame_index).zfill(6)
+                        record['file_name'] = '../' + dataset + '/training/image_02/' + folder + '/' +str(frame_index).zfill(6) + '.png'
                     if dataset == 'MOTSChallenge':
-                        record['file_name'] = '../' + dataset + '/train/images/' + folder + '/' +str(frame_index).zfill(6)
+                        record['file_name'] = '../' + dataset + '/train/images/' + folder + '/' +str(frame_index).zfill(6) + '.jpg'
                             
                 record['image_id'] = frame_index
                 record['height'] = img_height
@@ -154,51 +154,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
-
-
-        
-        
-    # for line in lines:
-    #     line_elements = line.split(" ")
-
-    #     if int(line_elements[0]) != frame_index:
-    #         frame = cv2.imread(filenames[frame_index])
-    #         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-
-    #         if brake:
-    #             time_start = time.time()
-    #             _ = brake_light_detector.detect(frame, vehicles_info)
-    #             time_end = time.time()
-    #             print('Frame processing time: ', time_end - time_start)
-    #         if turning:
-    #             time_start = time.time()
-    #             _ = turn_light_detector.detect(frame, vehicles_info)
-    #             time_end = time.time()
-    #             print('Frame processing time: ', time_end - time_start)
-    #         vehicles_info = []
-    #         frame_index += 1
-
-    #     if line_elements[2] in vehicles:
-    #         vehicle_info = {}
-
-    #         # Get the bounding box points from the text file
-    #         vehicle_pt1 = (int(float(line_elements[6])), int(float(line_elements[7])))
-    #         vehicle_pt2 = (int(float(line_elements[8])), int(float(line_elements[9])))
-    #         # Get the vehicle_id
-    #         vehicle_id = line_elements[1]
-    #         alpha, rotation_y = line_elements[5], line_elements[16]
-    #         beta = float(alpha)*-1.0 -2*math.pi + float(rotation_y)*-1.0
-    #         contrabeta = np.arctan(float(line_elements[15])/float(line_elements[13]))
-
-    #         vehicle_info['bbox'] = (vehicle_pt1, vehicle_pt2)
-    #         vehicle_info['vehicle_id'] = vehicle_id
-    #         vehicle_info['vehicle_angle_information'] = {'alpha': alpha,
-    #                                                     'beta': beta,
-    #                                                     'rotation_y': rotation_y,
-    #                                                     'contrabeta': contrabeta}
-    #         vehicle_info['occlusion'] = int(line_elements[4])
-
-    #         vehicles_info.append(vehicle_info)
