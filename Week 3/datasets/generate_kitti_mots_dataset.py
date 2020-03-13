@@ -85,7 +85,7 @@ def generate_dataset_dicts(dataset, text_instances, server):
             if int(class_id) != 10:
                 obj = {
                         "bbox": bbox,
-                        "bbox_mode": BoxMode.XYXY_ABS,
+                        "bbox_mode": BoxMode.XYWH_ABS,
                         "category_id": int(class_id)
                 }
                 objects.append(obj)
@@ -95,8 +95,8 @@ def generate_dataset_dicts(dataset, text_instances, server):
 
 
 def main():
-    # dataset = 'KITTI-MOTS'
-    dataset = 'MOTSChallenge'
+    dataset = 'KITTI-MOTS'
+    # dataset = 'MOTSChallenge'
     validation = True
 
     train_dataset_dicts = []
