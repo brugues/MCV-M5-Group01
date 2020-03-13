@@ -13,12 +13,12 @@ from detectron2.structures import BoxMode
 
 def generate_dataset_dicts(dataset, text_instances, server):
     """ Generates the dataset in COCO format """
-
     dataset_dicts = []
     dataset_dicts = []
 
     for text_file in text_instances:
-        folder = text_file.split('/')[-2]
+        folder = text_file.split('/')[-1]
+        folder = folder.split('.')[0]
 
         frame_index = 0
         with open(text_file, 'r') as f:
@@ -44,9 +44,16 @@ def generate_dataset_dicts(dataset, text_instances, server):
 
             if lines_id == 0:
                 if server:
-                    record['file_name'] = '../mcv/datasets/' + dataset + '/training/images_02/' + folder + '/' + str(frame_index).zfill(6)
+                    if dataset == 'KITTI-MOTS':
+                        record['file_name'] = '../mcv/datasets/' + dataset + '/training/image_02/' + folder + '/' + str(frame_index).zfill(6)
+                    if dataset == 'MOTSChallenge':
+                        record['file_name'] = '../mcv/datasets/' + dataset + '/train/images/' + folder + '/' + str(frame_index).zfill(6)
                 else:
-                    record['file_name'] = '../' + dataset + '/training/images_02/' + folder + '/' +str(frame_index).zfill(6)
+                    if dataset == 'KITTI-MOTS':
+                        record['file_name'] = '../' + dataset + '/training/image_02/' + folder + '/' +str(frame_index).zfill(6)
+                    if dataset == 'MOTSChallenge':
+                        record['file_name'] = '../' + dataset + '/train/images/' + folder + '/' +str(frame_index).zfill(6)
+                            
                 record['image_id'] = frame_index
                 record['height'] = img_height
                 record['width'] = img_width
@@ -60,9 +67,17 @@ def generate_dataset_dicts(dataset, text_instances, server):
                 objects = []
 
                 if server:
-                    record['file_name'] = '../mcv/datasets/' + dataset + '/training/images_02/' + folder + '/' + str(frame_index).zfill(6) + '.png'
+                    if dataset == 'KITTI-MOTS':
+                        record['file_name'] = '../mcv/datasets/' + dataset + '/training/image_02/' + folder + '/' + str(frame_index).zfill(6) + '.png'
+                    if dataset == 'MOTSChallenge':
+                        record['file_name'] = '../mcv/datasets/' + dataset + '/train/images/' + folder + '/' + str(frame_index).zfill(6) + '.jpg'
+
                 else:
-                    record['file_name'] = '../' + dataset + '/training/images_02/' + folder + '/' +str(frame_index).zfill(6) + '.png'
+                    if dataset == 'KITTI-MOTS':
+                        record['file_name'] = '../' + dataset + '/training/image_02/' + folder + '/' +str(frame_index).zfill(6) + '.png'
+                    if dataset == 'MOTSChallenge':
+                        record['file_name'] = '../' + dataset + '/train/images/' + folder + '/' +str(frame_index).zfill(6) + '.jpg'
+                        
                 record['image_id'] = frame_index
                 record['height'] = img_height
                 record['width'] = img_width
@@ -75,33 +90,41 @@ def generate_dataset_dicts(dataset, text_instances, server):
                 }
                 objects.append(obj)
             lines_id += 1
-
+    print(dataset_dicts)
     return dataset_dicts
 
 
 def main():
-    #dataset = 'KITTI-MOTS'
+    # dataset = 'KITTI-MOTS'
     dataset = 'MOTSChallenge'
-    validation = False
+    validation = True
 
     train_dataset_dicts = []
     if validation:
-    val_dataset_dicts = []
-
-    text_instances = glob.glob('../' + dataset + '/instances_txt/*.txt')
+        val_dataset_dicts = []
+        
+    if dataset == 'KITTI-MOTS':
+        text_instances = glob.glob('../mcv/datasets/' + dataset + '/instances_txt/*.txt')
+    if dataset == 'MOTSChallenge':
+        text_instances = glob.glob('../mcv/datasets/' + dataset + '/train/instances_txt/*.txt')
     text_instances.sort()
 
     train_text_instances = []
 
     if validation:
         val_text_instances = []
-        val_folders = ['0002', '0006', '0007', '0008', '0010', '0013', '0014', '0016', '0018']
-
+        
+        if dataset == 'KITTI-MOTS':
+            val_folders = ['0002', '0006', '0007', '0008', '0010', '0013', '0014', '0016', '0018']
+        if dataset == 'MOTSChallenge':
+            val_folders = ['0005']
+            
         for text_instance in text_instances:
             if text_instance.split('/')[-1].split('.')[0] in val_folders:
-            val_text_instances.append(text_instance)
+                # print(text_instance)
+                val_text_instances.append(text_instance)
             else:
-            train_text_instances.append(text_instance)
+                train_text_instances.append(text_instance)
     else:
         train_text_instances.append(text_instance)
 
