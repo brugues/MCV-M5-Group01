@@ -22,3 +22,7 @@
 * Faster R-CNN folder: object detection on inference using faster R-CNN X101-FPN model
 * RetinaNet folder: object detection on inference using RetinaNet R101 model
 * Kitti folder: object detection by training faster R-CNN on Kitti dataset 
+
+### Week 3
+
+* Presentation link: https://docs.google.com/presentation/d/1t0stD33og1GBGHHyi98-WzJ3yTyVtJHZKTJ98nuHhrw/edit?usp=sharing
