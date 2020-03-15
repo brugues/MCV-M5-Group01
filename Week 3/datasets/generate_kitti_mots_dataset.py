@@ -11,6 +11,19 @@ import os
 import pickle
 from detectron2.structures import BoxMode
 
+from pycocotools.coco import COCO
+import pycocotools.mask as rletools
+from pycocotools.mask import toBbox
+from pycocotools.mask import decode
+from pycocotools.mask import encode
+import numpy as np
+import glob
+import matplotlib.pyplot as plt
+import pylab
+import os
+import pickle
+from detectron2.structures import BoxMode
+
 def generate_dataset_dicts(dataset, text_instances, server):
     """ Generates the dataset in COCO format """
     dataset_dicts = []
@@ -41,18 +54,17 @@ def generate_dataset_dicts(dataset, text_instances, server):
                         'counts': rle
             }
             bbox = toBbox(decode_obj)
-
             if lines_id == 0:
                 if server:
                     if dataset == 'KITTI-MOTS':
-                        record['file_name'] = '../mcv/datasets/' + dataset + '/training/image_02/' + folder + '/' + str(frame_index).zfill(6) + '.png'
+                        record['file_name'] = '../mcv/datasets/' + dataset + '/training/image_02/' + folder + '/' + str(time_frame).zfill(6) + '.png'
                     if dataset == 'MOTSChallenge':
-                        record['file_name'] = '../mcv/datasets/' + dataset + '/train/images/' + folder + '/' + str(frame_index).zfill(6) + '.jpg'
+                        record['file_name'] = '../mcv/datasets/' + dataset + '/train/images/' + folder + '/' + str(time_frame).zfill(6) + '.jpg'
                 else:
                     if dataset == 'KITTI-MOTS':
-                        record['file_name'] = '../' + dataset + '/training/image_02/' + folder + '/' +str(frame_index).zfill(6) + '.png'
+                        record['file_name'] = '../' + dataset + '/training/image_02/' + folder + '/' +str(time_frame).zfill(6) + '.png'
                     if dataset == 'MOTSChallenge':
-                        record['file_name'] = '../' + dataset + '/train/images/' + folder + '/' +str(frame_index).zfill(6) + '.jpg'
+                        record['file_name'] = '../' + dataset + '/train/images/' + folder + '/' +str(time_frame).zfill(6) + '.jpg'
                             
                 record['image_id'] = frame_index
                 record['height'] = int(img_height)
@@ -86,6 +98,10 @@ def generate_dataset_dicts(dataset, text_instances, server):
                 bbox[2] += bbox[0]
                 bbox[3] += bbox[1]
                 bbox = [bbox[0], bbox[1], bbox[2], bbox[3]]
+                if int(class_id) == 1:
+                    class_id = 2
+                elif int(class_id) == 2:
+                    class_id = 0
                 obj = {
                         "bbox": bbox,
                         "bbox_mode": BoxMode.XYXY_ABS,
