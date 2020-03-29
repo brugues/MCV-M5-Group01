@@ -30,3 +30,7 @@
 ### Week 4
 
 * Presentation link: https://docs.google.com/presentation/d/1-x5ZZvygWBtKrzn1glUhK2gvsMtZzY3Mp-s6CX-BumQ/edit?usp=sharing
+
+### Week 5
+
+* Presentation link: https://docs.google.com/presentation/d/1u6ATg0SQvUrok8WS-D_mC7vWiALQkCptvARraXvp2Aw/edit?usp=sharing
