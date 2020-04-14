@@ -34,3 +34,11 @@
 ### Week 5
 
 * Presentation link: https://docs.google.com/presentation/d/1u6ATg0SQvUrok8WS-D_mC7vWiALQkCptvARraXvp2Aw/edit?usp=sharing
+
+### Week 6
+
+* Presentation link: https://docs.google.com/presentation/d/1gjnKQEPWaX5-_2zYw79nhn4NiMu_Vy2YUZMn1r-ZUcQ/edit?usp=sharing
+
+- Datasets: Contain the scripts to generate the datasets for detectron2 framework
+- deeplab: Instructions of how to use deeplab in folder
+- Scripts of week 6 experiments
