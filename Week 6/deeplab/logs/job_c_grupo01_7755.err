@@ -1,0 +1,58 @@
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/core/conv2d_ws.py:40: The name tf.layers.Layer is deprecated. Please use tf.compat.v1.layers.Layer instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From train.py:462: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:From train.py:272: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+W0413 13:47:47.522007 140328318707456 module_wrapper.py:139] From train.py:272: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+WARNING:tensorflow:From train.py:272: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+W0413 13:47:47.522192 140328318707456 module_wrapper.py:139] From train.py:272: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+WARNING:tensorflow:From train.py:287: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+W0413 13:47:47.522383 140328318707456 module_wrapper.py:139] From train.py:287: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+WARNING:tensorflow:From train.py:288: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+W0413 13:47:47.522533 140328318707456 module_wrapper.py:139] From train.py:288: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+INFO:tensorflow:Training on train_fine set
+I0413 13:47:47.522619 140328318707456 train.py:288] Training on train_fine set
+WARNING:tensorflow:From train.py:312: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+W0413 13:47:47.523567 140328318707456 module_wrapper.py:139] From train.py:312: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/datasets/data_generator.py:350: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+W0413 13:47:47.528062 140328318707456 module_wrapper.py:139] From /home/grupo01/tensorflow/models/research/deeplab/datasets/data_generator.py:350: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+Traceback (most recent call last):
+  File "train.py", line 462, in <module>
+    tf.app.run()
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/absl/app.py", line 299, in run
+    _run_main(main, args)
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/absl/app.py", line 250, in _run_main
+    sys.exit(main(argv))
+  File "train.py", line 316, in main
+    model_args = (dataset.get_one_shot_iterator(), {
+  File "/home/grupo01/tensorflow/models/research/deeplab/datasets/data_generator.py", line 323, in get_one_shot_iterator
+    files = self._get_all_files()
+  File "/home/grupo01/tensorflow/models/research/deeplab/datasets/data_generator.py", line 350, in _get_all_files
+    return tf.gfile.Glob(file_pattern)
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/lib/io/file_io.py", line 363, in get_matching_files
+    return get_matching_files_v2(filename)
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/lib/io/file_io.py", line 384, in get_matching_files_v2
+    compat.as_bytes(pattern))
+tensorflow.python.framework.errors_impl.NotFoundError: ./datasets/cityscapes/tfrecord--add_image_level_feature=True; No such file or directory

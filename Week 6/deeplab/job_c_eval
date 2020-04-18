@@ -1,0 +1,24 @@
+#!/bin/bash
+#SBATCH -n 4 # Number of cores
+#SBATCH --mem 1000 # 2GB solicitados.
+#SBATCH -p mlow # or mlow Partition to submit to master low prioriy queue
+#SBATCH --gres gpu:1 # Para pedir Pascales MAX 8
+#SBATCH -o logs/%x_%u_%j.out # File to which STDOUT will be written
+#SBATCH -e logs/%x_%u_%j.err # File to which STDERR will be written
+python eval.py \
+--logtostderr \
+--eval_split='val_fine' \
+--model_variant='xception_65' \
+--atrous_rates=6 \
+--atrous_rates=12 \
+--atrous_rates=18 \
+--output_strid=16 \
+--decoder_output_stride=4 \
+--eval_crop_size='1025, 2049' \
+--train_batch_size=1 \
+--dataset='cityscapes' \
+--add_image_level_feature=True \
+--colormap_type='cityscapes' \
+--checkpoint_dir="./datasets/cityscapes/exp/train_on_train_set/train/exp2" \
+--eval_logdir="./datasets/cityscapes/exp/train_on_train_set/val/exp2" \
+--dataset_dir="./datasets/cityscapes/tfrecord"

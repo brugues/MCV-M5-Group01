@@ -1,0 +1,460 @@
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/core/conv2d_ws.py:40: The name tf.layers.Layer is deprecated. Please use tf.compat.v1.layers.Layer instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From train.py:462: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:From train.py:272: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+W0418 12:07:58.051090 140141264381696 module_wrapper.py:139] From train.py:272: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+WARNING:tensorflow:From train.py:272: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+W0418 12:07:58.051259 140141264381696 module_wrapper.py:139] From train.py:272: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+WARNING:tensorflow:From train.py:287: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+W0418 12:07:58.051445 140141264381696 module_wrapper.py:139] From train.py:287: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+WARNING:tensorflow:From train.py:288: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+W0418 12:07:58.051591 140141264381696 module_wrapper.py:139] From train.py:288: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+INFO:tensorflow:Training on train_fine set
+I0418 12:07:58.051676 140141264381696 train.py:288] Training on train_fine set
+WARNING:tensorflow:From train.py:312: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+W0418 12:07:58.053021 140141264381696 module_wrapper.py:139] From train.py:312: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/datasets/data_generator.py:350: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+W0418 12:07:58.060852 140141264381696 module_wrapper.py:139] From /home/grupo01/tensorflow/models/research/deeplab/datasets/data_generator.py:350: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+W0418 12:07:58.246112 140141264381696 module_wrapper.py:139] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+W0418 12:07:58.247284 140141264381696 module_wrapper.py:139] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+2020-04-18 12:07:58.780576: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-04-18 12:07:58.845296: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: TITAN X (Pascal) major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:04:00.0
+2020-04-18 12:07:58.845487: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-18 12:07:58.846718: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-04-18 12:07:58.847846: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-04-18 12:07:58.848101: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-04-18 12:07:58.849517: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-04-18 12:07:58.850680: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-04-18 12:07:58.854367: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-18 12:07:58.861664: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+W0418 12:07:59.867123 140141264381696 module_wrapper.py:139] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.lin_space is deprecated. Please use tf.linspace instead.
+
+W0418 12:07:59.867652 140141264381696 module_wrapper.py:139] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.lin_space is deprecated. Please use tf.linspace instead.
+
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.random_shuffle is deprecated. Please use tf.random.shuffle instead.
+
+W0418 12:07:59.867896 140141264381696 module_wrapper.py:139] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.random_shuffle is deprecated. Please use tf.random.shuffle instead.
+
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.image.resize_bilinear is deprecated. Please use tf.compat.v1.image.resize_bilinear instead.
+
+W0418 12:08:00.052748 140141264381696 module_wrapper.py:139] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.image.resize_bilinear is deprecated. Please use tf.compat.v1.image.resize_bilinear instead.
+
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.reverse_v2 is deprecated. Please use tf.reverse instead.
+
+W0418 12:08:02.141026 140141264381696 module_wrapper.py:139] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.reverse_v2 is deprecated. Please use tf.reverse instead.
+
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/datasets/data_generator.py:339: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+W0418 12:08:02.359474 140141264381696 deprecation.py:323] From /home/grupo01/tensorflow/models/research/deeplab/datasets/data_generator.py:339: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/slim/deployment/model_deploy.py:192: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0418 12:08:02.377315 140141264381696 module_wrapper.py:139] From /home/grupo01/tensorflow/models/research/slim/deployment/model_deploy.py:192: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/slim/deployment/model_deploy.py:192: The name tf.get_variable_scope is deprecated. Please use tf.compat.v1.get_variable_scope instead.
+
+W0418 12:08:02.377459 140141264381696 module_wrapper.py:139] From /home/grupo01/tensorflow/models/research/slim/deployment/model_deploy.py:192: The name tf.get_variable_scope is deprecated. Please use tf.compat.v1.get_variable_scope instead.
+
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/model.py:320: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+W0418 12:08:02.379852 140141264381696 module_wrapper.py:139] From /home/grupo01/tensorflow/models/research/deeplab/model.py:320: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/core/feature_extractor.py:490: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W0418 12:08:02.380346 140141264381696 deprecation.py:323] From /home/grupo01/tensorflow/models/research/deeplab/core/feature_extractor.py:490: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/contrib/layers/python/layers/layers.py:1057: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0418 12:08:02.384893 140141264381696 deprecation.py:323] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/contrib/layers/python/layers/layers.py:1057: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/utils/train_utils.py:158: The name tf.losses.add_loss is deprecated. Please use tf.compat.v1.losses.add_loss instead.
+
+W0418 12:08:06.953157 140141264381696 module_wrapper.py:139] From /home/grupo01/tensorflow/models/research/deeplab/utils/train_utils.py:158: The name tf.losses.add_loss is deprecated. Please use tf.compat.v1.losses.add_loss instead.
+
+WARNING:tensorflow:From train.py:324: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+W0418 12:08:06.953643 140141264381696 module_wrapper.py:139] From train.py:324: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From train.py:324: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+W0418 12:08:06.953769 140141264381696 module_wrapper.py:139] From train.py:324: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From train.py:330: The name tf.model_variables is deprecated. Please use tf.compat.v1.model_variables instead.
+
+W0418 12:08:06.953926 140141264381696 module_wrapper.py:139] From train.py:330: The name tf.model_variables is deprecated. Please use tf.compat.v1.model_variables instead.
+
+WARNING:tensorflow:From train.py:331: The name tf.summary.histogram is deprecated. Please use tf.compat.v1.summary.histogram instead.
+
+W0418 12:08:06.954088 140141264381696 module_wrapper.py:139] From train.py:331: The name tf.summary.histogram is deprecated. Please use tf.compat.v1.summary.histogram instead.
+
+WARNING:tensorflow:From train.py:359: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+W0418 12:08:07.837092 140141264381696 module_wrapper.py:139] From train.py:359: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+INFO:tensorflow:Setting decay_steps to total training steps.
+I0418 12:08:07.840281 140141264381696 train_utils.py:327] Setting decay_steps to total training steps.
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/utils/train_utils.py:337: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+W0418 12:08:07.840429 140141264381696 module_wrapper.py:139] From /home/grupo01/tensorflow/models/research/deeplab/utils/train_utils.py:337: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/utils/train_utils.py:372: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0418 12:08:07.848779 140141264381696 deprecation.py:323] From /home/grupo01/tensorflow/models/research/deeplab/utils/train_utils.py:372: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From train.py:378: The name tf.train.MomentumOptimizer is deprecated. Please use tf.compat.v1.train.MomentumOptimizer instead.
+
+W0418 12:08:07.850781 140141264381696 module_wrapper.py:139] From train.py:378: The name tf.train.MomentumOptimizer is deprecated. Please use tf.compat.v1.train.MomentumOptimizer instead.
+
+WARNING:tensorflow:From train.py:396: The name tf.check_numerics is deprecated. Please use tf.debugging.check_numerics instead.
+
+W0418 12:08:10.333009 140141264381696 module_wrapper.py:139] From train.py:396: The name tf.check_numerics is deprecated. Please use tf.debugging.check_numerics instead.
+
+WARNING:tensorflow:From train.py:422: The name tf.summary.merge is deprecated. Please use tf.compat.v1.summary.merge instead.
+
+W0418 12:08:12.865654 140141264381696 module_wrapper.py:139] From train.py:422: The name tf.summary.merge is deprecated. Please use tf.compat.v1.summary.merge instead.
+
+WARNING:tensorflow:From train.py:425: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+W0418 12:08:12.881457 140141264381696 module_wrapper.py:139] From train.py:425: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+INFO:tensorflow:Initializing model from path: ./datasets/cityscapes/checkpoints/xception_71/model.ckpt
+I0418 12:08:12.881704 140141264381696 train_utils.py:207] Initializing model from path: ./datasets/cityscapes/checkpoints/xception_71/model.ckpt
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/contrib/slim/python/slim/learning.py:742: Supervisor.__init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+W0418 12:08:17.311059 140141264381696 deprecation.py:323] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/contrib/slim/python/slim/learning.py:742: Supervisor.__init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+2020-04-18 12:08:18.584444: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-04-18 12:08:18.645939: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2099885000 Hz
+2020-04-18 12:08:18.648152: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x561b275800b0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-04-18 12:08:18.648176: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-04-18 12:08:18.934114: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x561b27465900 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-04-18 12:08:18.934198: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): TITAN X (Pascal), Compute Capability 6.1
+2020-04-18 12:08:18.940823: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: TITAN X (Pascal) major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:04:00.0
+2020-04-18 12:08:18.943433: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-18 12:08:18.943698: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-04-18 12:08:18.943951: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-04-18 12:08:18.944114: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-04-18 12:08:18.944161: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-04-18 12:08:18.944202: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-04-18 12:08:18.944246: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-18 12:08:18.956422: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-04-18 12:08:18.957330: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-18 12:08:18.964610: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-04-18 12:08:18.964642: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-04-18 12:08:18.964654: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-04-18 12:08:18.977385: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11448 MB memory) -> physical GPU (device: 0, name: TITAN X (Pascal), pci bus id: 0000:04:00.0, compute capability: 6.1)
+INFO:tensorflow:Running local_init_op.
+I0418 12:09:10.113797 140141264381696 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0418 12:09:11.309621 140141264381696 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Starting Session.
+I0418 12:09:53.630937 140141264381696 learning.py:754] Starting Session.
+INFO:tensorflow:Saving checkpoint to path ./datasets/cityscapes/exp/train_on_train_set/train/exp4/model.ckpt
+I0418 12:09:53.730313 140137081972480 supervisor.py:1117] Saving checkpoint to path ./datasets/cityscapes/exp/train_on_train_set/train/exp4/model.ckpt
+INFO:tensorflow:Starting Queues.
+I0418 12:09:53.737660 140141264381696 learning.py:768] Starting Queues.
+INFO:tensorflow:global_step/sec: 0
+I0418 12:09:57.489476 140137090365184 supervisor.py:1099] global_step/sec: 0
+2020-04-18 12:10:50.678656: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:145] Filling up shuffle buffer (this may take a while): 8 of 100
+2020-04-18 12:10:52.172732: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:145] Filling up shuffle buffer (this may take a while): 13 of 100
+2020-04-18 12:11:02.039400: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:145] Filling up shuffle buffer (this may take a while): 23 of 100
+2020-04-18 12:11:11.870830: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:145] Filling up shuffle buffer (this may take a while): 24 of 100
+2020-04-18 12:11:22.531386: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:145] Filling up shuffle buffer (this may take a while): 63 of 100
+2020-04-18 12:11:34.459597: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:145] Filling up shuffle buffer (this may take a while): 71 of 100
+2020-04-18 12:11:46.614227: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:145] Filling up shuffle buffer (this may take a while): 95 of 100
+2020-04-18 12:11:49.174167: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:195] Shuffle buffer filled.
+2020-04-18 12:11:50.345725: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-18 12:12:04.537893: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+INFO:tensorflow:Recording summary at step 0.
+I0418 12:12:05.805909 140137098757888 supervisor.py:1050] Recording summary at step 0.
+INFO:tensorflow:global step 10: loss = 3.3189 (0.749 sec/step)
+I0418 12:12:52.767414 140141264381696 learning.py:507] global step 10: loss = 3.3189 (0.749 sec/step)
+INFO:tensorflow:global step 20: loss = 3.3169 (3.188 sec/step)
+I0418 12:13:31.349547 140141264381696 learning.py:507] global step 20: loss = 3.3169 (3.188 sec/step)
+INFO:tensorflow:global step 30: loss = 3.3088 (0.756 sec/step)
+I0418 12:13:40.207887 140141264381696 learning.py:507] global step 30: loss = 3.3088 (0.756 sec/step)
+INFO:tensorflow:global step 40: loss = 3.3069 (0.994 sec/step)
+I0418 12:14:09.980600 140141264381696 learning.py:507] global step 40: loss = 3.3069 (0.994 sec/step)
+INFO:tensorflow:global step 50: loss = 3.3074 (0.688 sec/step)
+I0418 12:14:27.966626 140141264381696 learning.py:507] global step 50: loss = 3.3074 (0.688 sec/step)
+INFO:tensorflow:global step 60: loss = 3.2914 (0.701 sec/step)
+I0418 12:14:52.608644 140141264381696 learning.py:507] global step 60: loss = 3.2914 (0.701 sec/step)
+INFO:tensorflow:global step 70: loss = 3.3174 (0.730 sec/step)
+I0418 12:15:18.056922 140141264381696 learning.py:507] global step 70: loss = 3.3174 (0.730 sec/step)
+INFO:tensorflow:global step 80: loss = 3.2905 (0.732 sec/step)
+I0418 12:15:32.914570 140141264381696 learning.py:507] global step 80: loss = 3.2905 (0.732 sec/step)
+INFO:tensorflow:global step 90: loss = 3.2893 (2.430 sec/step)
+I0418 12:15:57.797850 140141264381696 learning.py:507] global step 90: loss = 3.2893 (2.430 sec/step)
+INFO:tensorflow:global step 100: loss = 3.2619 (0.731 sec/step)
+I0418 12:16:21.009838 140141264381696 learning.py:507] global step 100: loss = 3.2619 (0.731 sec/step)
+INFO:tensorflow:global step 110: loss = 3.2778 (0.803 sec/step)
+I0418 12:16:59.916406 140141264381696 learning.py:507] global step 110: loss = 3.2778 (0.803 sec/step)
+INFO:tensorflow:global step 120: loss = 3.2797 (1.055 sec/step)
+I0418 12:17:09.153940 140141264381696 learning.py:507] global step 120: loss = 3.2797 (1.055 sec/step)
+INFO:tensorflow:global step 130: loss = 3.2584 (0.823 sec/step)
+I0418 12:17:48.652049 140141264381696 learning.py:507] global step 130: loss = 3.2584 (0.823 sec/step)
+INFO:tensorflow:global step 140: loss = 3.2886 (0.712 sec/step)
+I0418 12:18:11.373963 140141264381696 learning.py:507] global step 140: loss = 3.2886 (0.712 sec/step)
+INFO:tensorflow:global step 150: loss = 3.2304 (1.079 sec/step)
+I0418 12:18:59.115470 140141264381696 learning.py:507] global step 150: loss = 3.2304 (1.079 sec/step)
+INFO:tensorflow:global step 160: loss = 3.2240 (10.620 sec/step)
+I0418 12:19:34.918766 140141264381696 learning.py:507] global step 160: loss = 3.2240 (10.620 sec/step)
+INFO:tensorflow:global_step/sec: 0.277027
+I0418 12:20:00.330485 140137090365184 supervisor.py:1099] global_step/sec: 0.277027
+INFO:tensorflow:global step 170: loss = 3.2187 (0.897 sec/step)
+I0418 12:20:02.182755 140141264381696 learning.py:507] global step 170: loss = 3.2187 (0.897 sec/step)
+INFO:tensorflow:Recording summary at step 172.
+I0418 12:20:04.785255 140137098757888 supervisor.py:1050] Recording summary at step 172.
+INFO:tensorflow:global step 180: loss = 3.2243 (1.374 sec/step)
+I0418 12:20:11.891175 140141264381696 learning.py:507] global step 180: loss = 3.2243 (1.374 sec/step)
+INFO:tensorflow:global step 190: loss = 3.1957 (0.859 sec/step)
+I0418 12:20:50.420927 140141264381696 learning.py:507] global step 190: loss = 3.1957 (0.859 sec/step)
+INFO:tensorflow:global step 200: loss = 3.1976 (0.723 sec/step)
+I0418 12:20:58.197524 140141264381696 learning.py:507] global step 200: loss = 3.1976 (0.723 sec/step)
+INFO:tensorflow:global step 210: loss = 3.1744 (7.443 sec/step)
+I0418 12:21:20.277719 140141264381696 learning.py:507] global step 210: loss = 3.1744 (7.443 sec/step)
+INFO:tensorflow:global step 220: loss = 3.1060 (0.807 sec/step)
+I0418 12:21:44.392696 140141264381696 learning.py:507] global step 220: loss = 3.1060 (0.807 sec/step)
+INFO:tensorflow:global step 230: loss = 3.0906 (1.918 sec/step)
+I0418 12:22:01.628609 140141264381696 learning.py:507] global step 230: loss = 3.0906 (1.918 sec/step)
+INFO:tensorflow:global step 240: loss = 2.9619 (0.716 sec/step)
+I0418 12:22:42.110652 140141264381696 learning.py:507] global step 240: loss = 2.9619 (0.716 sec/step)
+INFO:tensorflow:global step 250: loss = 3.1167 (2.412 sec/step)
+I0418 12:22:52.149724 140141264381696 learning.py:507] global step 250: loss = 3.1167 (2.412 sec/step)
+INFO:tensorflow:global step 260: loss = 2.8923 (0.725 sec/step)
+I0418 12:23:29.833398 140141264381696 learning.py:507] global step 260: loss = 2.8923 (0.725 sec/step)
+INFO:tensorflow:global step 270: loss = 2.4728 (0.739 sec/step)
+I0418 12:23:38.149691 140141264381696 learning.py:507] global step 270: loss = 2.4728 (0.739 sec/step)
+INFO:tensorflow:global step 280: loss = 2.3914 (0.825 sec/step)
+I0418 12:24:01.566956 140141264381696 learning.py:507] global step 280: loss = 2.3914 (0.825 sec/step)
+INFO:tensorflow:global step 290: loss = 2.4347 (0.714 sec/step)
+I0418 12:24:30.203009 140141264381696 learning.py:507] global step 290: loss = 2.4347 (0.714 sec/step)
+INFO:tensorflow:global step 300: loss = 1.4309 (12.072 sec/step)
+I0418 12:25:05.229037 140141264381696 learning.py:507] global step 300: loss = 1.4309 (12.072 sec/step)
+INFO:tensorflow:global step 310: loss = 3.1155 (0.727 sec/step)
+I0418 12:25:29.608157 140141264381696 learning.py:507] global step 310: loss = 3.1155 (0.727 sec/step)
+INFO:tensorflow:global step 320: loss = 2.0295 (8.034 sec/step)
+I0418 12:26:02.344512 140141264381696 learning.py:507] global step 320: loss = 2.0295 (8.034 sec/step)
+INFO:tensorflow:global step 330: loss = 2.0733 (0.745 sec/step)
+I0418 12:26:27.016197 140141264381696 learning.py:507] global step 330: loss = 2.0733 (0.745 sec/step)
+INFO:tensorflow:global step 340: loss = 1.5294 (2.105 sec/step)
+I0418 12:26:50.604049 140141264381696 learning.py:507] global step 340: loss = 1.5294 (2.105 sec/step)
+INFO:tensorflow:global step 350: loss = 3.1040 (3.643 sec/step)
+I0418 12:27:15.463866 140141264381696 learning.py:507] global step 350: loss = 3.1040 (3.643 sec/step)
+INFO:tensorflow:global step 360: loss = 2.7751 (0.734 sec/step)
+I0418 12:27:40.192679 140141264381696 learning.py:507] global step 360: loss = 2.7751 (0.734 sec/step)
+INFO:tensorflow:global step 370: loss = 2.6652 (0.705 sec/step)
+I0418 12:28:09.053914 140141264381696 learning.py:507] global step 370: loss = 2.6652 (0.705 sec/step)
+INFO:tensorflow:global step 380: loss = 1.8500 (0.829 sec/step)
+I0418 12:28:33.764322 140141264381696 learning.py:507] global step 380: loss = 1.8500 (0.829 sec/step)
+INFO:tensorflow:global step 390: loss = 1.7508 (0.693 sec/step)
+I0418 12:28:58.640860 140141264381696 learning.py:507] global step 390: loss = 1.7508 (0.693 sec/step)
+INFO:tensorflow:global step 400: loss = 2.0726 (0.758 sec/step)
+I0418 12:29:22.236728 140141264381696 learning.py:507] global step 400: loss = 2.0726 (0.758 sec/step)
+INFO:tensorflow:global step 410: loss = 1.8999 (0.687 sec/step)
+I0418 12:29:46.861616 140141264381696 learning.py:507] global step 410: loss = 1.8999 (0.687 sec/step)
+INFO:tensorflow:Saving checkpoint to path ./datasets/cityscapes/exp/train_on_train_set/train/exp4/model.ckpt
+I0418 12:29:54.741730 140137081972480 supervisor.py:1117] Saving checkpoint to path ./datasets/cityscapes/exp/train_on_train_set/train/exp4/model.ckpt
+INFO:tensorflow:global_step/sec: 0.413294
+I0418 12:30:00.320011 140137090365184 supervisor.py:1099] global_step/sec: 0.413294
+INFO:tensorflow:Recording summary at step 417.
+I0418 12:30:09.336138 140137098757888 supervisor.py:1050] Recording summary at step 417.
+INFO:tensorflow:global step 420: loss = 1.4065 (1.579 sec/step)
+I0418 12:30:32.089551 140141264381696 learning.py:507] global step 420: loss = 1.4065 (1.579 sec/step)
+INFO:tensorflow:global step 430: loss = 1.6403 (5.716 sec/step)
+I0418 12:31:06.353243 140141264381696 learning.py:507] global step 430: loss = 1.6403 (5.716 sec/step)
+INFO:tensorflow:global step 440: loss = 2.6153 (0.739 sec/step)
+I0418 12:31:33.879296 140141264381696 learning.py:507] global step 440: loss = 2.6153 (0.739 sec/step)
+INFO:tensorflow:global step 450: loss = 1.6959 (8.058 sec/step)
+I0418 12:32:05.519917 140141264381696 learning.py:507] global step 450: loss = 1.6959 (8.058 sec/step)
+INFO:tensorflow:global step 460: loss = 1.3642 (0.733 sec/step)
+I0418 12:32:22.058591 140141264381696 learning.py:507] global step 460: loss = 1.3642 (0.733 sec/step)
+INFO:tensorflow:global step 470: loss = 2.0312 (0.764 sec/step)
+I0418 12:32:45.716710 140141264381696 learning.py:507] global step 470: loss = 2.0312 (0.764 sec/step)
+INFO:tensorflow:global step 480: loss = 1.6697 (1.023 sec/step)
+I0418 12:33:11.345974 140141264381696 learning.py:507] global step 480: loss = 1.6697 (1.023 sec/step)
+INFO:tensorflow:global step 490: loss = 1.9330 (0.855 sec/step)
+I0418 12:33:35.845468 140141264381696 learning.py:507] global step 490: loss = 1.9330 (0.855 sec/step)
+INFO:tensorflow:global step 500: loss = 2.2639 (0.770 sec/step)
+I0418 12:34:01.622380 140141264381696 learning.py:507] global step 500: loss = 2.2639 (0.770 sec/step)
+INFO:tensorflow:global step 510: loss = 1.2033 (0.781 sec/step)
+I0418 12:34:24.849619 140141264381696 learning.py:507] global step 510: loss = 1.2033 (0.781 sec/step)
+INFO:tensorflow:global step 520: loss = 1.0405 (5.030 sec/step)
+I0418 12:35:03.364594 140141264381696 learning.py:507] global step 520: loss = 1.0405 (5.030 sec/step)
+INFO:tensorflow:global step 530: loss = 0.9700 (10.119 sec/step)
+I0418 12:35:49.719472 140141264381696 learning.py:507] global step 530: loss = 0.9700 (10.119 sec/step)
+INFO:tensorflow:global step 540: loss = 0.8336 (1.320 sec/step)
+I0418 12:36:26.316163 140141264381696 learning.py:507] global step 540: loss = 0.8336 (1.320 sec/step)
+INFO:tensorflow:global step 550: loss = 1.4244 (0.730 sec/step)
+I0418 12:37:05.838656 140141264381696 learning.py:507] global step 550: loss = 1.4244 (0.730 sec/step)
+INFO:tensorflow:global step 560: loss = 1.0181 (0.719 sec/step)
+I0418 12:37:30.839696 140141264381696 learning.py:507] global step 560: loss = 1.0181 (0.719 sec/step)
+INFO:tensorflow:global step 570: loss = 1.5883 (0.793 sec/step)
+I0418 12:37:55.588753 140141264381696 learning.py:507] global step 570: loss = 1.5883 (0.793 sec/step)
+INFO:tensorflow:global step 580: loss = 0.5121 (6.705 sec/step)
+I0418 12:38:11.369908 140141264381696 learning.py:507] global step 580: loss = 0.5121 (6.705 sec/step)
+INFO:tensorflow:global step 590: loss = 2.5928 (0.822 sec/step)
+I0418 12:38:44.268063 140141264381696 learning.py:507] global step 590: loss = 2.5928 (0.822 sec/step)
+INFO:tensorflow:global step 600: loss = 1.8766 (0.980 sec/step)
+I0418 12:39:26.816154 140141264381696 learning.py:507] global step 600: loss = 1.8766 (0.980 sec/step)
+INFO:tensorflow:global_step/sec: 0.315661
+I0418 12:40:02.232382 140137090365184 supervisor.py:1099] global_step/sec: 0.315661
+INFO:tensorflow:Recording summary at step 609.
+I0418 12:40:06.745403 140137098757888 supervisor.py:1050] Recording summary at step 609.
+INFO:tensorflow:global step 610: loss = 1.5322 (1.223 sec/step)
+I0418 12:40:07.790804 140141264381696 learning.py:507] global step 610: loss = 1.5322 (1.223 sec/step)
+INFO:tensorflow:global step 620: loss = 1.6745 (0.933 sec/step)
+I0418 12:40:32.682433 140141264381696 learning.py:507] global step 620: loss = 1.6745 (0.933 sec/step)
+INFO:tensorflow:global step 630: loss = 1.5724 (0.995 sec/step)
+I0418 12:41:05.961380 140141264381696 learning.py:507] global step 630: loss = 1.5724 (0.995 sec/step)
+INFO:tensorflow:global step 640: loss = 1.9743 (5.008 sec/step)
+I0418 12:41:36.635984 140141264381696 learning.py:507] global step 640: loss = 1.9743 (5.008 sec/step)
+INFO:tensorflow:global step 650: loss = 2.4144 (1.023 sec/step)
+I0418 12:41:53.023735 140141264381696 learning.py:507] global step 650: loss = 2.4144 (1.023 sec/step)
+INFO:tensorflow:global step 660: loss = 2.0616 (0.973 sec/step)
+I0418 12:42:24.468645 140141264381696 learning.py:507] global step 660: loss = 2.0616 (0.973 sec/step)
+INFO:tensorflow:global step 670: loss = 2.1196 (0.713 sec/step)
+I0418 12:42:46.728477 140141264381696 learning.py:507] global step 670: loss = 2.1196 (0.713 sec/step)
+INFO:tensorflow:global step 680: loss = 1.6477 (0.743 sec/step)
+I0418 12:43:11.673425 140141264381696 learning.py:507] global step 680: loss = 1.6477 (0.743 sec/step)
+INFO:tensorflow:global step 690: loss = 3.5327 (0.913 sec/step)
+I0418 12:43:43.823479 140141264381696 learning.py:507] global step 690: loss = 3.5327 (0.913 sec/step)
+INFO:tensorflow:global step 700: loss = 1.5612 (8.647 sec/step)
+I0418 12:44:18.444639 140141264381696 learning.py:507] global step 700: loss = 1.5612 (8.647 sec/step)
+INFO:tensorflow:global step 710: loss = 1.3597 (0.886 sec/step)
+I0418 12:44:31.889838 140141264381696 learning.py:507] global step 710: loss = 1.3597 (0.886 sec/step)
+INFO:tensorflow:global step 720: loss = 1.7819 (3.800 sec/step)
+I0418 12:44:57.925056 140141264381696 learning.py:507] global step 720: loss = 1.7819 (3.800 sec/step)
+INFO:tensorflow:global step 730: loss = 2.4647 (0.872 sec/step)
+I0418 12:45:35.622787 140141264381696 learning.py:507] global step 730: loss = 2.4647 (0.872 sec/step)
+INFO:tensorflow:global step 740: loss = 2.8586 (0.748 sec/step)
+I0418 12:46:33.028932 140141264381696 learning.py:507] global step 740: loss = 2.8586 (0.748 sec/step)
+INFO:tensorflow:global step 750: loss = 2.1201 (1.389 sec/step)
+I0418 12:46:53.411467 140141264381696 learning.py:507] global step 750: loss = 2.1201 (1.389 sec/step)
+INFO:tensorflow:global step 760: loss = 2.7422 (3.661 sec/step)
+I0418 12:47:36.689565 140141264381696 learning.py:507] global step 760: loss = 2.7422 (3.661 sec/step)
+INFO:tensorflow:global step 770: loss = 1.3258 (1.117 sec/step)
+I0418 12:48:15.372385 140141264381696 learning.py:507] global step 770: loss = 1.3258 (1.117 sec/step)
+INFO:tensorflow:global step 780: loss = 1.3953 (9.547 sec/step)
+I0418 12:48:50.112990 140141264381696 learning.py:507] global step 780: loss = 1.3953 (9.547 sec/step)
+INFO:tensorflow:global step 790: loss = 1.0478 (0.763 sec/step)
+I0418 12:49:11.946816 140141264381696 learning.py:507] global step 790: loss = 1.0478 (0.763 sec/step)
+INFO:tensorflow:global step 800: loss = 1.8020 (0.786 sec/step)
+I0418 12:49:35.018591 140141264381696 learning.py:507] global step 800: loss = 1.8020 (0.786 sec/step)
+INFO:tensorflow:Saving checkpoint to path ./datasets/cityscapes/exp/train_on_train_set/train/exp4/model.ckpt
+I0418 12:49:54.263276 140137081972480 supervisor.py:1117] Saving checkpoint to path ./datasets/cityscapes/exp/train_on_train_set/train/exp4/model.ckpt
+INFO:tensorflow:Recording summary at step 809.
+I0418 12:49:58.659977 140137098757888 supervisor.py:1050] Recording summary at step 809.
+INFO:tensorflow:global_step/sec: 0.341514
+I0418 12:49:59.552815 140137090365184 supervisor.py:1099] global_step/sec: 0.341514
+INFO:tensorflow:global step 810: loss = 1.2066 (1.601 sec/step)
+I0418 12:50:01.185610 140141264381696 learning.py:507] global step 810: loss = 1.2066 (1.601 sec/step)
+INFO:tensorflow:global step 820: loss = 1.4355 (1.053 sec/step)
+I0418 12:50:45.990576 140141264381696 learning.py:507] global step 820: loss = 1.4355 (1.053 sec/step)
+INFO:tensorflow:global step 830: loss = 2.0191 (0.814 sec/step)
+I0418 12:51:10.136409 140141264381696 learning.py:507] global step 830: loss = 2.0191 (0.814 sec/step)
+INFO:tensorflow:global step 840: loss = 1.2331 (0.772 sec/step)
+I0418 12:51:32.518882 140141264381696 learning.py:507] global step 840: loss = 1.2331 (0.772 sec/step)
+INFO:tensorflow:global step 850: loss = 1.7620 (0.926 sec/step)
+I0418 12:51:57.352899 140141264381696 learning.py:507] global step 850: loss = 1.7620 (0.926 sec/step)
+INFO:tensorflow:global step 860: loss = 1.9560 (0.787 sec/step)
+I0418 12:52:20.645002 140141264381696 learning.py:507] global step 860: loss = 1.9560 (0.787 sec/step)
+INFO:tensorflow:global step 870: loss = 2.4195 (0.719 sec/step)
+I0418 12:52:28.878556 140141264381696 learning.py:507] global step 870: loss = 2.4195 (0.719 sec/step)
+INFO:tensorflow:global step 880: loss = 1.0902 (6.739 sec/step)
+I0418 12:52:58.021466 140141264381696 learning.py:507] global step 880: loss = 1.0902 (6.739 sec/step)
+INFO:tensorflow:global step 890: loss = 1.3042 (0.819 sec/step)
+I0418 12:53:15.036754 140141264381696 learning.py:507] global step 890: loss = 1.3042 (0.819 sec/step)
+INFO:tensorflow:global step 900: loss = 1.1328 (0.758 sec/step)
+I0418 12:53:40.430172 140141264381696 learning.py:507] global step 900: loss = 1.1328 (0.758 sec/step)
+INFO:tensorflow:global step 910: loss = 1.1613 (0.781 sec/step)
+I0418 12:54:03.403482 140141264381696 learning.py:507] global step 910: loss = 1.1613 (0.781 sec/step)
+INFO:tensorflow:global step 920: loss = 1.2262 (1.271 sec/step)
+I0418 12:54:27.049942 140141264381696 learning.py:507] global step 920: loss = 1.2262 (1.271 sec/step)
+INFO:tensorflow:global step 930: loss = 1.6975 (0.728 sec/step)
+I0418 12:54:50.942386 140141264381696 learning.py:507] global step 930: loss = 1.6975 (0.728 sec/step)
+INFO:tensorflow:global step 940: loss = 1.1977 (0.693 sec/step)
+I0418 12:54:59.113686 140141264381696 learning.py:507] global step 940: loss = 1.1977 (0.693 sec/step)
+INFO:tensorflow:global step 950: loss = 1.3721 (0.709 sec/step)
+I0418 12:55:21.750546 140141264381696 learning.py:507] global step 950: loss = 1.3721 (0.709 sec/step)
+INFO:tensorflow:global step 960: loss = 1.6826 (0.746 sec/step)
+I0418 12:55:45.180530 140141264381696 learning.py:507] global step 960: loss = 1.6826 (0.746 sec/step)
+INFO:tensorflow:global step 970: loss = 1.0460 (0.746 sec/step)
+I0418 12:56:00.511562 140141264381696 learning.py:507] global step 970: loss = 1.0460 (0.746 sec/step)
+INFO:tensorflow:global step 980: loss = 1.9792 (0.716 sec/step)
+I0418 12:56:24.226885 140141264381696 learning.py:507] global step 980: loss = 1.9792 (0.716 sec/step)
+INFO:tensorflow:global step 990: loss = 1.8936 (0.821 sec/step)
+I0418 12:56:46.655314 140141264381696 learning.py:507] global step 990: loss = 1.8936 (0.821 sec/step)
+INFO:tensorflow:global step 1000: loss = 2.2563 (5.289 sec/step)
+I0418 12:57:01.308553 140141264381696 learning.py:507] global step 1000: loss = 2.2563 (5.289 sec/step)
+INFO:tensorflow:global step 1010: loss = 1.2410 (0.753 sec/step)
+I0418 12:57:32.167979 140141264381696 learning.py:507] global step 1010: loss = 1.2410 (0.753 sec/step)
+INFO:tensorflow:global step 1020: loss = 0.5815 (0.767 sec/step)
+I0418 12:57:42.387894 140141264381696 learning.py:507] global step 1020: loss = 0.5815 (0.767 sec/step)
+INFO:tensorflow:global step 1030: loss = 1.7389 (1.211 sec/step)
+I0418 12:58:06.771013 140141264381696 learning.py:507] global step 1030: loss = 1.7389 (1.211 sec/step)
+INFO:tensorflow:global step 1040: loss = 0.9089 (0.698 sec/step)
+I0418 12:58:30.682163 140141264381696 learning.py:507] global step 1040: loss = 0.9089 (0.698 sec/step)
+INFO:tensorflow:global step 1050: loss = 1.7123 (0.840 sec/step)
+I0418 12:58:55.115246 140141264381696 learning.py:507] global step 1050: loss = 1.7123 (0.840 sec/step)
+INFO:tensorflow:global step 1060: loss = 1.3811 (12.225 sec/step)
+I0418 12:59:18.979489 140141264381696 learning.py:507] global step 1060: loss = 1.3811 (12.225 sec/step)
+INFO:tensorflow:global step 1070: loss = 1.3690 (0.807 sec/step)
+I0418 12:59:27.143990 140141264381696 learning.py:507] global step 1070: loss = 1.3690 (0.807 sec/step)
+INFO:tensorflow:global step 1080: loss = 1.3421 (3.846 sec/step)
+I0418 12:59:37.873418 140141264381696 learning.py:507] global step 1080: loss = 1.3421 (3.846 sec/step)
+INFO:tensorflow:global_step/sec: 0.458262
+I0418 12:59:57.509149 140137090365184 supervisor.py:1099] global_step/sec: 0.458262
+INFO:tensorflow:Recording summary at step 1087.
+I0418 13:00:11.799235 140137098757888 supervisor.py:1050] Recording summary at step 1087.
+INFO:tensorflow:global step 1090: loss = 1.0506 (0.730 sec/step)
+I0418 13:00:14.215453 140141264381696 learning.py:507] global step 1090: loss = 1.0506 (0.730 sec/step)
+INFO:tensorflow:global step 1100: loss = 1.3577 (0.701 sec/step)
+I0418 13:00:22.519883 140141264381696 learning.py:507] global step 1100: loss = 1.3577 (0.701 sec/step)
+INFO:tensorflow:global step 1110: loss = 1.0797 (0.682 sec/step)
+I0418 13:01:00.766461 140141264381696 learning.py:507] global step 1110: loss = 1.0797 (0.682 sec/step)

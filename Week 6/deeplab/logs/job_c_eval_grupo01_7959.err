@@ -1,0 +1,201 @@
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/core/conv2d_ws.py:40: The name tf.layers.Layer is deprecated. Please use tf.compat.v1.layers.Layer instead.
+
+WARNING:tensorflow:From eval.py:227: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:From eval.py:91: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+W0414 19:52:50.674153 140323582375680 module_wrapper.py:139] From eval.py:91: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+WARNING:tensorflow:From eval.py:91: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+W0414 19:52:50.674312 140323582375680 module_wrapper.py:139] From eval.py:91: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+WARNING:tensorflow:From eval.py:108: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+W0414 19:52:50.674504 140323582375680 module_wrapper.py:139] From eval.py:108: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+WARNING:tensorflow:From eval.py:109: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+W0414 19:52:50.674643 140323582375680 module_wrapper.py:139] From eval.py:109: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+INFO:tensorflow:Evaluating on val_fine set
+I0414 19:52:50.674721 140323582375680 eval.py:109] Evaluating on val_fine set
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/datasets/data_generator.py:350: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+W0414 19:52:50.675258 140323582375680 module_wrapper.py:139] From /home/grupo01/tensorflow/models/research/deeplab/datasets/data_generator.py:350: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+W0414 19:52:50.817083 140323582375680 module_wrapper.py:139] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+W0414 19:52:50.818131 140323582375680 module_wrapper.py:139] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+2020-04-14 19:52:51.268270: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-04-14 19:52:51.336345: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: TITAN X (Pascal) major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:06:00.0
+2020-04-14 19:52:51.336633: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-14 19:52:51.337962: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-04-14 19:52:51.339091: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-04-14 19:52:51.339347: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-04-14 19:52:51.340772: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-04-14 19:52:51.342016: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-04-14 19:52:51.345767: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-14 19:52:51.352421: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/datasets/data_generator.py:339: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+W0414 19:52:53.285945 140323582375680 deprecation.py:323] From /home/grupo01/tensorflow/models/research/deeplab/datasets/data_generator.py:339: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+INFO:tensorflow:Performing single-scale test.
+I0414 19:52:53.302922 140323582375680 eval.py:127] Performing single-scale test.
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/model.py:320: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+W0414 19:52:53.303130 140323582375680 module_wrapper.py:139] From /home/grupo01/tensorflow/models/research/deeplab/model.py:320: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/core/feature_extractor.py:490: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W0414 19:52:53.303493 140323582375680 deprecation.py:323] From /home/grupo01/tensorflow/models/research/deeplab/core/feature_extractor.py:490: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/core/xception.py:469: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0414 19:52:53.305423 140323582375680 module_wrapper.py:139] From /home/grupo01/tensorflow/models/research/deeplab/core/xception.py:469: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/contrib/layers/python/layers/layers.py:1057: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0414 19:52:53.307589 140323582375680 deprecation.py:323] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/contrib/layers/python/layers/layers.py:1057: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/core/utils.py:41: The name tf.image.resize_bilinear is deprecated. Please use tf.compat.v1.image.resize_bilinear instead.
+
+W0414 19:52:57.382921 140323582375680 module_wrapper.py:139] From /home/grupo01/tensorflow/models/research/deeplab/core/utils.py:41: The name tf.image.resize_bilinear is deprecated. Please use tf.compat.v1.image.resize_bilinear instead.
+
+WARNING:tensorflow:From eval.py:150: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0414 19:52:57.535678 140323582375680 deprecation.py:323] From eval.py:150: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From eval.py:161: The name tf.metrics.mean_iou is deprecated. Please use tf.compat.v1.metrics.mean_iou instead.
+
+W0414 19:52:57.536643 140323582375680 module_wrapper.py:139] From eval.py:161: The name tf.metrics.mean_iou is deprecated. Please use tf.compat.v1.metrics.mean_iou instead.
+
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/ops/metrics_impl.py:1178: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+W0414 19:52:57.615265 140323582375680 deprecation.py:323] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/ops/metrics_impl.py:1178: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From eval.py:171: The name tf.metrics.true_positives is deprecated. Please use tf.compat.v1.metrics.true_positives instead.
+
+W0414 19:52:57.625881 140323582375680 module_wrapper.py:139] From eval.py:171: The name tf.metrics.true_positives is deprecated. Please use tf.compat.v1.metrics.true_positives instead.
+
+WARNING:tensorflow:From eval.py:174: The name tf.metrics.false_positives is deprecated. Please use tf.compat.v1.metrics.false_positives instead.
+
+W0414 19:52:57.644177 140323582375680 module_wrapper.py:139] From eval.py:174: The name tf.metrics.false_positives is deprecated. Please use tf.compat.v1.metrics.false_positives instead.
+
+WARNING:tensorflow:From eval.py:177: The name tf.metrics.false_negatives is deprecated. Please use tf.compat.v1.metrics.false_negatives instead.
+
+W0414 19:52:57.661584 140323582375680 module_wrapper.py:139] From eval.py:177: The name tf.metrics.false_negatives is deprecated. Please use tf.compat.v1.metrics.false_negatives instead.
+
+WARNING:tensorflow:From eval.py:191: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+W0414 19:52:58.862941 140323582375680 module_wrapper.py:139] From eval.py:191: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+WARNING:tensorflow:From eval.py:192: Print (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2018-08-20.
+Instructions for updating:
+Use tf.print instead of tf.Print. Note that tf.print returns a no-output operator that directly prints the output. Outside of defuns or eager mode, this operator will not be executed unless it is directly specified in session.run or used as a control dependency for other operators. This is only a concern in graph mode. Below is an example of how to ensure tf.print executes in graph mode:
+
+W0414 19:52:58.864476 140323582375680 deprecation.py:323] From eval.py:192: Print (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2018-08-20.
+Instructions for updating:
+Use tf.print instead of tf.Print. Note that tf.print returns a no-output operator that directly prints the output. Outside of defuns or eager mode, this operator will not be executed unless it is directly specified in session.run or used as a control dependency for other operators. This is only a concern in graph mode. Below is an example of how to ensure tf.print executes in graph mode:
+
+WARNING:tensorflow:From eval.py:195: The name tf.summary.merge is deprecated. Please use tf.compat.v1.summary.merge instead.
+
+W0414 19:52:58.898514 140323582375680 module_wrapper.py:139] From eval.py:195: The name tf.summary.merge is deprecated. Please use tf.compat.v1.summary.merge instead.
+
+WARNING:tensorflow:From eval.py:208: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+W0414 19:52:58.899844 140323582375680 module_wrapper.py:139] From eval.py:208: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From eval.py:209: print_model_analysis (from tensorflow.contrib.tfprof.model_analyzer) is deprecated and will be removed after 2018-01-01.
+Instructions for updating:
+Use `tf.profiler.profile(graph, run_meta, op_log, cmd, options)`. Build `options` with `tf.profiler.ProfileOptionBuilder`. See README.md for details
+W0414 19:52:58.899980 140323582375680 deprecation.py:323] From eval.py:209: print_model_analysis (from tensorflow.contrib.tfprof.model_analyzer) is deprecated and will be removed after 2018-01-01.
+Instructions for updating:
+Use `tf.profiler.profile(graph, run_meta, op_log, cmd, options)`. Build `options` with `tf.profiler.ProfileOptionBuilder`. See README.md for details
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/profiler/internal/flops_registry.py:142: tensor_shape_from_node_def_name (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.tensor_shape_from_node_def_name`
+W0414 19:52:58.902546 140323582375680 deprecation.py:323] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/profiler/internal/flops_registry.py:142: tensor_shape_from_node_def_name (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.tensor_shape_from_node_def_name`
+61 ops no flops stats due to incomplete shapes.
+61 ops no flops stats due to incomplete shapes.
+INFO:tensorflow:Waiting for new checkpoint at ./datasets/cityscapes/exp/train_on_train_set/train/exp3
+I0414 19:53:00.726636 140323582375680 evaluation.py:189] Waiting for new checkpoint at ./datasets/cityscapes/exp/train_on_train_set/train/exp3
+INFO:tensorflow:Found new checkpoint at ./datasets/cityscapes/exp/train_on_train_set/train/exp3/model.ckpt-14357
+I0414 19:53:00.730110 140323582375680 evaluation.py:198] Found new checkpoint at ./datasets/cityscapes/exp/train_on_train_set/train/exp3/model.ckpt-14357
+INFO:tensorflow:Graph was finalized.
+I0414 19:53:02.452769 140323582375680 monitored_session.py:240] Graph was finalized.
+2020-04-14 19:53:02.453768: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-04-14 19:53:02.468563: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2099885000 Hz
+2020-04-14 19:53:02.469627: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55b78aaf6210 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-04-14 19:53:02.469654: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-04-14 19:53:02.704160: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55b78aaf2150 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-04-14 19:53:02.704224: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): TITAN X (Pascal), Compute Capability 6.1
+2020-04-14 19:53:02.710863: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: TITAN X (Pascal) major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:06:00.0
+2020-04-14 19:53:02.710989: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-14 19:53:02.711040: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-04-14 19:53:02.711082: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-04-14 19:53:02.711138: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-04-14 19:53:02.711171: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-04-14 19:53:02.711202: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-04-14 19:53:02.711233: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-14 19:53:02.721212: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-04-14 19:53:02.721295: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-14 19:53:02.728989: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-04-14 19:53:02.729021: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-04-14 19:53:02.729033: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-04-14 19:53:02.739678: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11448 MB memory) -> physical GPU (device: 0, name: TITAN X (Pascal), pci bus id: 0000:06:00.0, compute capability: 6.1)
+INFO:tensorflow:Restoring parameters from ./datasets/cityscapes/exp/train_on_train_set/train/exp3/model.ckpt-14357
+I0414 19:53:02.742398 140323582375680 saver.py:1284] Restoring parameters from ./datasets/cityscapes/exp/train_on_train_set/train/exp3/model.ckpt-14357
+INFO:tensorflow:Running local_init_op.
+I0414 19:53:34.104782 140323582375680 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0414 19:53:34.490860 140323582375680 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Starting evaluation at 2020-04-14-17:53:49
+I0414 19:53:49.971259 140323582375680 evaluation.py:450] Starting evaluation at 2020-04-14-17:53:49
+2020-04-14 19:54:04.727692: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-14 19:54:27.938467: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+eval/miou_1.0_class_17[0]eval/miou_1.0_class_7[0.132789239]eval/miou_1.0_class_10[0.835090101]
+
+eval/miou_1.0_class_15[0.0158164706]
+eval/miou_1.0_class_18[0.506243706]
+eval/miou_1.0_class_14[0.0275402702]
+eval/miou_1.0_class_5[0.0693242103]
+eval/miou_1.0_class_12[0]
+eval/miou_1.0_class_9[0.413672328]
+eval/miou_1.0_class_8[0.837104201]
+eval/miou_1.0_class_2[0.828042269]
+eval/miou_1.0_class_1[0.582502604]
+eval/miou_1.0_class_13[0.794747055]
+eval/miou_1.0_class_0[0.942136049]
+eval/miou_1.0_class_3[0.133396015]
+eval/miou_1.0_class_4[0.159552038]
+eval/miou_1.0_class_16[0.0787446722]
+eval/miou_1.0_class_11[0.49630329]
+eval/miou_1.0_class_6[0]
+
+eval/miou_1.0_overall[0.360684454]
+INFO:tensorflow:Waiting for new checkpoint at ./datasets/cityscapes/exp/train_on_train_set/train/exp3
+I0414 20:00:33.104336 140323582375680 evaluation.py:189] Waiting for new checkpoint at ./datasets/cityscapes/exp/train_on_train_set/train/exp3
+slurmstepd: error: *** JOB 7959 ON etse-75-51 CANCELLED AT 2020-04-14T20:34:04 ***

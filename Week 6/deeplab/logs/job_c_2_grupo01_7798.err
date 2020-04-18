@@ -1,0 +1,112 @@
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/core/conv2d_ws.py:40: The name tf.layers.Layer is deprecated. Please use tf.compat.v1.layers.Layer instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From train.py:465: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:From train.py:275: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+W0413 17:16:04.770874 140224460588800 module_wrapper.py:139] From train.py:275: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+WARNING:tensorflow:From train.py:275: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+W0413 17:16:04.771084 140224460588800 module_wrapper.py:139] From train.py:275: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+WARNING:tensorflow:From train.py:290: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+W0413 17:16:04.771292 140224460588800 module_wrapper.py:139] From train.py:290: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+WARNING:tensorflow:From train.py:291: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+W0413 17:16:04.771516 140224460588800 module_wrapper.py:139] From train.py:291: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+INFO:tensorflow:Training on train_fine set
+I0413 17:16:04.771606 140224460588800 train.py:291] Training on train_fine set
+WARNING:tensorflow:From train.py:315: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+W0413 17:16:04.772669 140224460588800 module_wrapper.py:139] From train.py:315: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/datasets/data_generator.py:350: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+W0413 17:16:04.777493 140224460588800 module_wrapper.py:139] From /home/grupo01/tensorflow/models/research/deeplab/datasets/data_generator.py:350: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+W0413 17:16:04.956436 140224460588800 module_wrapper.py:139] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+W0413 17:16:04.957713 140224460588800 module_wrapper.py:139] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+2020-04-13 17:16:05.522691: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-04-13 17:16:05.664144: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: TITAN X (Pascal) major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:0f:00.0
+2020-04-13 17:16:05.664589: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-13 17:16:05.667042: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-04-13 17:16:05.669148: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-04-13 17:16:05.669682: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-04-13 17:16:05.672593: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-04-13 17:16:05.675068: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-04-13 17:16:05.682226: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-13 17:16:05.692909: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+W0413 17:16:06.862719 140224460588800 module_wrapper.py:139] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.lin_space is deprecated. Please use tf.linspace instead.
+
+W0413 17:16:06.863721 140224460588800 module_wrapper.py:139] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.lin_space is deprecated. Please use tf.linspace instead.
+
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.random_shuffle is deprecated. Please use tf.random.shuffle instead.
+
+W0413 17:16:06.864004 140224460588800 module_wrapper.py:139] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.random_shuffle is deprecated. Please use tf.random.shuffle instead.
+
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.image.resize_bilinear is deprecated. Please use tf.compat.v1.image.resize_bilinear instead.
+
+W0413 17:16:07.082108 140224460588800 module_wrapper.py:139] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.image.resize_bilinear is deprecated. Please use tf.compat.v1.image.resize_bilinear instead.
+
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.reverse_v2 is deprecated. Please use tf.reverse instead.
+
+W0413 17:16:09.465132 140224460588800 module_wrapper.py:139] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.reverse_v2 is deprecated. Please use tf.reverse instead.
+
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/datasets/data_generator.py:339: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+W0413 17:16:09.708338 140224460588800 deprecation.py:323] From /home/grupo01/tensorflow/models/research/deeplab/datasets/data_generator.py:339: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/slim/deployment/model_deploy.py:192: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0413 17:16:09.726843 140224460588800 module_wrapper.py:139] From /home/grupo01/tensorflow/models/research/slim/deployment/model_deploy.py:192: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/slim/deployment/model_deploy.py:192: The name tf.get_variable_scope is deprecated. Please use tf.compat.v1.get_variable_scope instead.
+
+W0413 17:16:09.727005 140224460588800 module_wrapper.py:139] From /home/grupo01/tensorflow/models/research/slim/deployment/model_deploy.py:192: The name tf.get_variable_scope is deprecated. Please use tf.compat.v1.get_variable_scope instead.
+
+Traceback (most recent call last):
+  File "train.py", line 465, in <module>
+    tf.app.run()
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/absl/app.py", line 299, in run
+    _run_main(main, args)
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/absl/app.py", line 250, in _run_main
+    sys.exit(main(argv))
+  File "train.py", line 322, in main
+    clones = model_deploy.create_clones(config, model_fn, args=model_args)
+  File "/home/grupo01/tensorflow/models/research/slim/deployment/model_deploy.py", line 194, in create_clones
+    outputs = model_fn(*args, **kwargs)
+  File "train.py", line 242, in _build_deeplab
+    add_image_level_feature=FLAGS.image_level_feature)
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/platform/flags.py", line 85, in __getattr__
+    return wrapped.__getattr__(name)
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/absl/flags/_flagvalues.py", line 473, in __getattr__
+    raise AttributeError(name)
+AttributeError: image_level_feature

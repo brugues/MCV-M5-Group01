@@ -1,0 +1,22 @@
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/core/conv2d_ws.py:40: The name tf.layers.Layer is deprecated. Please use tf.compat.v1.layers.Layer instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+Traceback (most recent call last):
+  File "train.py", line 144, in <module>
+    flags.DEFINE_boolean('add_image_level_feature', True, 'Image level features.')
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/platform/flags.py", line 58, in wrapper
+    return original_function(*args, **kwargs)
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/absl/flags/_defines.py", line 268, in DEFINE_boolean
+    flag_values, module_name)
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/absl/flags/_defines.py", line 104, in DEFINE_flag
+    fv[flag.name] = flag
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/absl/flags/_flagvalues.py", line 430, in __setitem__
+    raise _exceptions.DuplicateFlagError.from_flag(name, self)
+absl.flags._exceptions.DuplicateFlagError: The flag 'add_image_level_feature' is defined twice. First from deeplab.common, Second from train.py.  Description from first occurrence: Add image level feature.

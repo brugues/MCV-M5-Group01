@@ -1,0 +1,35 @@
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/core/conv2d_ws.py:40: The name tf.layers.Layer is deprecated. Please use tf.compat.v1.layers.Layer instead.
+
+WARNING:tensorflow:From eval.py:227: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+Traceback (most recent call last):
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/absl/flags/_flagvalues.py", line 528, in _assert_validators
+    validator.verify(self)
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/absl/flags/_validators.py", line 82, in verify
+    raise _exceptions.ValidationError(self.message)
+absl.flags._exceptions.ValidationError: Flag --eval_logdir must have a value other than None.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "eval.py", line 227, in <module>
+    tf.app.run()
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/absl/app.py", line 293, in run
+    flags_parser,
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/absl/app.py", line 362, in _run_init
+    flags_parser=flags_parser,
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/absl/app.py", line 212, in _register_and_parse_flags_with_usage
+    args_to_main = flags_parser(original_argv)
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/platform/app.py", line 31, in _parse_flags_tolerate_undef
+    return flags.FLAGS(_sys.argv if argv is None else argv, known_only=True)
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/platform/flags.py", line 112, in __call__
+    return self.__dict__['__wrapped'].__call__(*args, **kwargs)
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/absl/flags/_flagvalues.py", line 636, in __call__
+    self._assert_all_validators()
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/absl/flags/_flagvalues.py", line 510, in _assert_all_validators
+    self._assert_validators(all_validators)
+  File "/home/grupo01/anaconda3/lib/python3.7/site-packages/absl/flags/_flagvalues.py", line 531, in _assert_validators
+    raise _exceptions.IllegalFlagValueError('%s: %s' % (message, str(e)))
+absl.flags._exceptions.IllegalFlagValueError: flag --eval_logdir=None: Flag --eval_logdir must have a value other than None.

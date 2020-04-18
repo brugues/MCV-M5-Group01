@@ -1,0 +1,990 @@
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/core/conv2d_ws.py:40: The name tf.layers.Layer is deprecated. Please use tf.compat.v1.layers.Layer instead.
+
+WARNING:tensorflow:From vis.py:327: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:From vis.py:195: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+W0418 12:44:59.619216 140044221417216 module_wrapper.py:139] From vis.py:195: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+WARNING:tensorflow:From vis.py:195: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+W0418 12:44:59.619363 140044221417216 module_wrapper.py:139] From vis.py:195: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+WARNING:tensorflow:From vis.py:214: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+W0418 12:44:59.619540 140044221417216 module_wrapper.py:139] From vis.py:214: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+INFO:tensorflow:Cityscapes requires converting train_id to eval_id.
+I0418 12:44:59.619615 140044221417216 vis.py:214] Cityscapes requires converting train_id to eval_id.
+WARNING:tensorflow:From vis.py:218: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+W0418 12:44:59.619715 140044221417216 module_wrapper.py:139] From vis.py:218: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+INFO:tensorflow:Visualizing on val_fine set
+I0418 12:44:59.619967 140044221417216 vis.py:225] Visualizing on val_fine set
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/datasets/data_generator.py:350: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+W0418 12:44:59.620751 140044221417216 module_wrapper.py:139] From /home/grupo01/tensorflow/models/research/deeplab/datasets/data_generator.py:350: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+W0418 12:44:59.812814 140044221417216 module_wrapper.py:139] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+W0418 12:44:59.814029 140044221417216 module_wrapper.py:139] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+2020-04-18 12:45:00.367514: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-04-18 12:45:00.436706: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: TITAN X (Pascal) major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:06:00.0
+2020-04-18 12:45:00.436908: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-18 12:45:00.438249: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-04-18 12:45:00.439359: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-04-18 12:45:00.439617: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-04-18 12:45:00.441005: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-04-18 12:45:00.442252: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-04-18 12:45:00.446025: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-18 12:45:00.455559: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/datasets/data_generator.py:339: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+W0418 12:45:02.475780 140044221417216 deprecation.py:323] From /home/grupo01/tensorflow/models/research/deeplab/datasets/data_generator.py:339: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+INFO:tensorflow:Performing single-scale test.
+I0418 12:45:02.494029 140044221417216 vis.py:237] Performing single-scale test.
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/model.py:320: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+W0418 12:45:02.494266 140044221417216 module_wrapper.py:139] From /home/grupo01/tensorflow/models/research/deeplab/model.py:320: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/core/feature_extractor.py:490: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W0418 12:45:02.494811 140044221417216 deprecation.py:323] From /home/grupo01/tensorflow/models/research/deeplab/core/feature_extractor.py:490: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/core/xception.py:469: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0418 12:45:02.496822 140044221417216 module_wrapper.py:139] From /home/grupo01/tensorflow/models/research/deeplab/core/xception.py:469: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/contrib/layers/python/layers/layers.py:1057: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0418 12:45:02.499423 140044221417216 deprecation.py:323] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/contrib/layers/python/layers/layers.py:1057: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/core/utils.py:41: The name tf.image.resize_bilinear is deprecated. Please use tf.compat.v1.image.resize_bilinear instead.
+
+W0418 12:45:06.259467 140044221417216 module_wrapper.py:139] From /home/grupo01/tensorflow/models/research/deeplab/core/utils.py:41: The name tf.image.resize_bilinear is deprecated. Please use tf.compat.v1.image.resize_bilinear instead.
+
+WARNING:tensorflow:From vis.py:276: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+W0418 12:45:06.682854 140044221417216 module_wrapper.py:139] From vis.py:276: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+INFO:tensorflow:Waiting for new checkpoint at ./datasets/cityscapes/exp/train_on_train_set/train/exp2
+I0418 12:45:06.686199 140044221417216 evaluation.py:189] Waiting for new checkpoint at ./datasets/cityscapes/exp/train_on_train_set/train/exp2
+INFO:tensorflow:Found new checkpoint at ./datasets/cityscapes/exp/train_on_train_set/train/exp2/model.ckpt-13932
+I0418 12:45:06.688801 140044221417216 evaluation.py:198] Found new checkpoint at ./datasets/cityscapes/exp/train_on_train_set/train/exp2/model.ckpt-13932
+INFO:tensorflow:Starting visualization at 2020-04-18-10:45:06
+I0418 12:45:06.688924 140044221417216 vis.py:289] Starting visualization at 2020-04-18-10:45:06
+INFO:tensorflow:Visualizing with model ./datasets/cityscapes/exp/train_on_train_set/train/exp2/model.ckpt-13932
+I0418 12:45:06.688993 140044221417216 vis.py:290] Visualizing with model ./datasets/cityscapes/exp/train_on_train_set/train/exp2/model.ckpt-13932
+WARNING:tensorflow:From vis.py:292: The name tf.train.Scaffold is deprecated. Please use tf.compat.v1.train.Scaffold instead.
+
+W0418 12:45:06.689131 140044221417216 module_wrapper.py:139] From vis.py:292: The name tf.train.Scaffold is deprecated. Please use tf.compat.v1.train.Scaffold instead.
+
+WARNING:tensorflow:From vis.py:292: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+W0418 12:45:06.689243 140044221417216 module_wrapper.py:139] From vis.py:292: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+WARNING:tensorflow:From vis.py:293: The name tf.train.ChiefSessionCreator is deprecated. Please use tf.compat.v1.train.ChiefSessionCreator instead.
+
+W0418 12:45:06.698189 140044221417216 module_wrapper.py:139] From vis.py:293: The name tf.train.ChiefSessionCreator is deprecated. Please use tf.compat.v1.train.ChiefSessionCreator instead.
+
+WARNING:tensorflow:From vis.py:297: The name tf.train.MonitoredSession is deprecated. Please use tf.compat.v1.train.MonitoredSession instead.
+
+W0418 12:45:06.698364 140044221417216 module_wrapper.py:139] From vis.py:297: The name tf.train.MonitoredSession is deprecated. Please use tf.compat.v1.train.MonitoredSession instead.
+
+WARNING:tensorflow:From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/ops/array_ops.py:1475: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0418 12:45:07.290963 140044221417216 deprecation.py:323] From /home/grupo01/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/ops/array_ops.py:1475: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+INFO:tensorflow:Graph was finalized.
+I0418 12:45:08.330758 140044221417216 monitored_session.py:240] Graph was finalized.
+2020-04-18 12:45:08.331437: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-04-18 12:45:08.349343: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2099885000 Hz
+2020-04-18 12:45:08.350421: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x563fe9550bf0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-04-18 12:45:08.350461: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-04-18 12:45:08.544047: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x563fe9553320 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-04-18 12:45:08.544086: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): TITAN X (Pascal), Compute Capability 6.1
+2020-04-18 12:45:08.546921: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: TITAN X (Pascal) major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:06:00.0
+2020-04-18 12:45:08.547023: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-18 12:45:08.547059: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-04-18 12:45:08.547089: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-04-18 12:45:08.547121: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-04-18 12:45:08.547146: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-04-18 12:45:08.547171: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-04-18 12:45:08.547196: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-18 12:45:08.555306: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-04-18 12:45:08.556133: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-18 12:45:08.559902: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-04-18 12:45:08.559921: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-04-18 12:45:08.559927: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-04-18 12:45:08.566303: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11448 MB memory) -> physical GPU (device: 0, name: TITAN X (Pascal), pci bus id: 0000:06:00.0, compute capability: 6.1)
+INFO:tensorflow:Restoring parameters from ./datasets/cityscapes/exp/train_on_train_set/train/exp2/model.ckpt-13932
+I0418 12:45:08.568428 140044221417216 saver.py:1284] Restoring parameters from ./datasets/cityscapes/exp/train_on_train_set/train/exp2/model.ckpt-13932
+INFO:tensorflow:Running local_init_op.
+I0418 12:45:32.805063 140044221417216 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0418 12:45:32.995998 140044221417216 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Visualizing batch 1
+I0418 12:45:34.095690 140044221417216 vis.py:303] Visualizing batch 1
+2020-04-18 12:45:45.904400: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-18 12:45:55.458977: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+WARNING:tensorflow:From /home/grupo01/tensorflow/models/research/deeplab/utils/save_annotation.py:65: The name tf.gfile.Open is deprecated. Please use tf.io.gfile.GFile instead.
+
+W0418 12:46:03.671405 140044221417216 module_wrapper.py:139] From /home/grupo01/tensorflow/models/research/deeplab/utils/save_annotation.py:65: The name tf.gfile.Open is deprecated. Please use tf.io.gfile.GFile instead.
+
+INFO:tensorflow:Visualizing batch 2
+I0418 12:46:09.572576 140044221417216 vis.py:303] Visualizing batch 2
+INFO:tensorflow:Visualizing batch 3
+I0418 12:46:16.829945 140044221417216 vis.py:303] Visualizing batch 3
+INFO:tensorflow:Visualizing batch 4
+I0418 12:46:19.602679 140044221417216 vis.py:303] Visualizing batch 4
+INFO:tensorflow:Visualizing batch 5
+I0418 12:46:22.864414 140044221417216 vis.py:303] Visualizing batch 5
+INFO:tensorflow:Visualizing batch 6
+I0418 12:46:33.062140 140044221417216 vis.py:303] Visualizing batch 6
+INFO:tensorflow:Visualizing batch 7
+I0418 12:46:36.824724 140044221417216 vis.py:303] Visualizing batch 7
+INFO:tensorflow:Visualizing batch 8
+I0418 12:46:45.644768 140044221417216 vis.py:303] Visualizing batch 8
+INFO:tensorflow:Visualizing batch 9
+I0418 12:46:47.180989 140044221417216 vis.py:303] Visualizing batch 9
+INFO:tensorflow:Visualizing batch 10
+I0418 12:46:48.560937 140044221417216 vis.py:303] Visualizing batch 10
+INFO:tensorflow:Visualizing batch 11
+I0418 12:46:50.080994 140044221417216 vis.py:303] Visualizing batch 11
+INFO:tensorflow:Visualizing batch 12
+I0418 12:46:51.775261 140044221417216 vis.py:303] Visualizing batch 12
+INFO:tensorflow:Visualizing batch 13
+I0418 12:46:53.296192 140044221417216 vis.py:303] Visualizing batch 13
+INFO:tensorflow:Visualizing batch 14
+I0418 12:46:55.042689 140044221417216 vis.py:303] Visualizing batch 14
+INFO:tensorflow:Visualizing batch 15
+I0418 12:46:56.643180 140044221417216 vis.py:303] Visualizing batch 15
+INFO:tensorflow:Visualizing batch 16
+I0418 12:47:00.696517 140044221417216 vis.py:303] Visualizing batch 16
+INFO:tensorflow:Visualizing batch 17
+I0418 12:47:02.319531 140044221417216 vis.py:303] Visualizing batch 17
+INFO:tensorflow:Visualizing batch 18
+I0418 12:47:10.387801 140044221417216 vis.py:303] Visualizing batch 18
+INFO:tensorflow:Visualizing batch 19
+I0418 12:47:13.021317 140044221417216 vis.py:303] Visualizing batch 19
+INFO:tensorflow:Visualizing batch 20
+I0418 12:47:14.539992 140044221417216 vis.py:303] Visualizing batch 20
+INFO:tensorflow:Visualizing batch 21
+I0418 12:47:16.121410 140044221417216 vis.py:303] Visualizing batch 21
+INFO:tensorflow:Visualizing batch 22
+I0418 12:47:19.790652 140044221417216 vis.py:303] Visualizing batch 22
+INFO:tensorflow:Visualizing batch 23
+I0418 12:47:21.127515 140044221417216 vis.py:303] Visualizing batch 23
+INFO:tensorflow:Visualizing batch 24
+I0418 12:47:27.767781 140044221417216 vis.py:303] Visualizing batch 24
+INFO:tensorflow:Visualizing batch 25
+I0418 12:47:29.203473 140044221417216 vis.py:303] Visualizing batch 25
+INFO:tensorflow:Visualizing batch 26
+I0418 12:47:30.701275 140044221417216 vis.py:303] Visualizing batch 26
+INFO:tensorflow:Visualizing batch 27
+I0418 12:47:32.181079 140044221417216 vis.py:303] Visualizing batch 27
+INFO:tensorflow:Visualizing batch 28
+I0418 12:47:33.885654 140044221417216 vis.py:303] Visualizing batch 28
+INFO:tensorflow:Visualizing batch 29
+I0418 12:47:35.542333 140044221417216 vis.py:303] Visualizing batch 29
+INFO:tensorflow:Visualizing batch 30
+I0418 12:47:39.005074 140044221417216 vis.py:303] Visualizing batch 30
+INFO:tensorflow:Visualizing batch 31
+I0418 12:47:41.919754 140044221417216 vis.py:303] Visualizing batch 31
+INFO:tensorflow:Visualizing batch 32
+I0418 12:47:45.777100 140044221417216 vis.py:303] Visualizing batch 32
+INFO:tensorflow:Visualizing batch 33
+I0418 12:47:51.076826 140044221417216 vis.py:303] Visualizing batch 33
+INFO:tensorflow:Visualizing batch 34
+I0418 12:47:55.877918 140044221417216 vis.py:303] Visualizing batch 34
+INFO:tensorflow:Visualizing batch 35
+I0418 12:48:04.309499 140044221417216 vis.py:303] Visualizing batch 35
+INFO:tensorflow:Visualizing batch 36
+I0418 12:48:05.636238 140044221417216 vis.py:303] Visualizing batch 36
+INFO:tensorflow:Visualizing batch 37
+I0418 12:48:08.163718 140044221417216 vis.py:303] Visualizing batch 37
+INFO:tensorflow:Visualizing batch 38
+I0418 12:48:09.763786 140044221417216 vis.py:303] Visualizing batch 38
+INFO:tensorflow:Visualizing batch 39
+I0418 12:48:11.311263 140044221417216 vis.py:303] Visualizing batch 39
+INFO:tensorflow:Visualizing batch 40
+I0418 12:48:12.795842 140044221417216 vis.py:303] Visualizing batch 40
+INFO:tensorflow:Visualizing batch 41
+I0418 12:48:14.443258 140044221417216 vis.py:303] Visualizing batch 41
+INFO:tensorflow:Visualizing batch 42
+I0418 12:48:15.952009 140044221417216 vis.py:303] Visualizing batch 42
+INFO:tensorflow:Visualizing batch 43
+I0418 12:48:18.491601 140044221417216 vis.py:303] Visualizing batch 43
+INFO:tensorflow:Visualizing batch 44
+I0418 12:48:27.924105 140044221417216 vis.py:303] Visualizing batch 44
+INFO:tensorflow:Visualizing batch 45
+I0418 12:48:29.533987 140044221417216 vis.py:303] Visualizing batch 45
+INFO:tensorflow:Visualizing batch 46
+I0418 12:48:31.740740 140044221417216 vis.py:303] Visualizing batch 46
+INFO:tensorflow:Visualizing batch 47
+I0418 12:48:33.321426 140044221417216 vis.py:303] Visualizing batch 47
+INFO:tensorflow:Visualizing batch 48
+I0418 12:48:34.844689 140044221417216 vis.py:303] Visualizing batch 48
+INFO:tensorflow:Visualizing batch 49
+I0418 12:48:39.107327 140044221417216 vis.py:303] Visualizing batch 49
+INFO:tensorflow:Visualizing batch 50
+I0418 12:48:40.595551 140044221417216 vis.py:303] Visualizing batch 50
+INFO:tensorflow:Visualizing batch 51
+I0418 12:48:42.180461 140044221417216 vis.py:303] Visualizing batch 51
+INFO:tensorflow:Visualizing batch 52
+I0418 12:48:43.866961 140044221417216 vis.py:303] Visualizing batch 52
+INFO:tensorflow:Visualizing batch 53
+I0418 12:48:48.407550 140044221417216 vis.py:303] Visualizing batch 53
+INFO:tensorflow:Visualizing batch 54
+I0418 12:48:51.114535 140044221417216 vis.py:303] Visualizing batch 54
+INFO:tensorflow:Visualizing batch 55
+I0418 12:48:55.301956 140044221417216 vis.py:303] Visualizing batch 55
+INFO:tensorflow:Visualizing batch 56
+I0418 12:48:57.335741 140044221417216 vis.py:303] Visualizing batch 56
+INFO:tensorflow:Visualizing batch 57
+I0418 12:48:58.855849 140044221417216 vis.py:303] Visualizing batch 57
+INFO:tensorflow:Visualizing batch 58
+I0418 12:49:00.367343 140044221417216 vis.py:303] Visualizing batch 58
+INFO:tensorflow:Visualizing batch 59
+I0418 12:49:03.439742 140044221417216 vis.py:303] Visualizing batch 59
+INFO:tensorflow:Visualizing batch 60
+I0418 12:49:07.501388 140044221417216 vis.py:303] Visualizing batch 60
+INFO:tensorflow:Visualizing batch 61
+I0418 12:49:09.187658 140044221417216 vis.py:303] Visualizing batch 61
+INFO:tensorflow:Visualizing batch 62
+I0418 12:49:10.735588 140044221417216 vis.py:303] Visualizing batch 62
+INFO:tensorflow:Visualizing batch 63
+I0418 12:49:12.254775 140044221417216 vis.py:303] Visualizing batch 63
+INFO:tensorflow:Visualizing batch 64
+I0418 12:49:13.856614 140044221417216 vis.py:303] Visualizing batch 64
+INFO:tensorflow:Visualizing batch 65
+I0418 12:49:15.382441 140044221417216 vis.py:303] Visualizing batch 65
+INFO:tensorflow:Visualizing batch 66
+I0418 12:49:16.818801 140044221417216 vis.py:303] Visualizing batch 66
+INFO:tensorflow:Visualizing batch 67
+I0418 12:49:18.128257 140044221417216 vis.py:303] Visualizing batch 67
+INFO:tensorflow:Visualizing batch 68
+I0418 12:49:19.667455 140044221417216 vis.py:303] Visualizing batch 68
+INFO:tensorflow:Visualizing batch 69
+I0418 12:49:21.370524 140044221417216 vis.py:303] Visualizing batch 69
+INFO:tensorflow:Visualizing batch 70
+I0418 12:49:23.006284 140044221417216 vis.py:303] Visualizing batch 70
+INFO:tensorflow:Visualizing batch 71
+I0418 12:49:25.300353 140044221417216 vis.py:303] Visualizing batch 71
+INFO:tensorflow:Visualizing batch 72
+I0418 12:49:26.912432 140044221417216 vis.py:303] Visualizing batch 72
+INFO:tensorflow:Visualizing batch 73
+I0418 12:49:28.549718 140044221417216 vis.py:303] Visualizing batch 73
+INFO:tensorflow:Visualizing batch 74
+I0418 12:49:29.863587 140044221417216 vis.py:303] Visualizing batch 74
+INFO:tensorflow:Visualizing batch 75
+I0418 12:49:31.378251 140044221417216 vis.py:303] Visualizing batch 75
+INFO:tensorflow:Visualizing batch 76
+I0418 12:49:32.960620 140044221417216 vis.py:303] Visualizing batch 76
+INFO:tensorflow:Visualizing batch 77
+I0418 12:49:34.584733 140044221417216 vis.py:303] Visualizing batch 77
+INFO:tensorflow:Visualizing batch 78
+I0418 12:49:36.158322 140044221417216 vis.py:303] Visualizing batch 78
+INFO:tensorflow:Visualizing batch 79
+I0418 12:49:37.644647 140044221417216 vis.py:303] Visualizing batch 79
+INFO:tensorflow:Visualizing batch 80
+I0418 12:49:39.010685 140044221417216 vis.py:303] Visualizing batch 80
+INFO:tensorflow:Visualizing batch 81
+I0418 12:49:40.299524 140044221417216 vis.py:303] Visualizing batch 81
+INFO:tensorflow:Visualizing batch 82
+I0418 12:49:41.691966 140044221417216 vis.py:303] Visualizing batch 82
+INFO:tensorflow:Visualizing batch 83
+I0418 12:49:43.417879 140044221417216 vis.py:303] Visualizing batch 83
+INFO:tensorflow:Visualizing batch 84
+I0418 12:49:44.892901 140044221417216 vis.py:303] Visualizing batch 84
+INFO:tensorflow:Visualizing batch 85
+I0418 12:49:46.489744 140044221417216 vis.py:303] Visualizing batch 85
+INFO:tensorflow:Visualizing batch 86
+I0418 12:49:48.089128 140044221417216 vis.py:303] Visualizing batch 86
+INFO:tensorflow:Visualizing batch 87
+I0418 12:49:49.739486 140044221417216 vis.py:303] Visualizing batch 87
+INFO:tensorflow:Visualizing batch 88
+I0418 12:49:51.328293 140044221417216 vis.py:303] Visualizing batch 88
+INFO:tensorflow:Visualizing batch 89
+I0418 12:49:54.401376 140044221417216 vis.py:303] Visualizing batch 89
+INFO:tensorflow:Visualizing batch 90
+I0418 12:49:56.011154 140044221417216 vis.py:303] Visualizing batch 90
+INFO:tensorflow:Visualizing batch 91
+I0418 12:49:57.568501 140044221417216 vis.py:303] Visualizing batch 91
+INFO:tensorflow:Visualizing batch 92
+I0418 12:49:59.163762 140044221417216 vis.py:303] Visualizing batch 92
+INFO:tensorflow:Visualizing batch 93
+I0418 12:50:00.923642 140044221417216 vis.py:303] Visualizing batch 93
+INFO:tensorflow:Visualizing batch 94
+I0418 12:50:02.542528 140044221417216 vis.py:303] Visualizing batch 94
+INFO:tensorflow:Visualizing batch 95
+I0418 12:50:04.217478 140044221417216 vis.py:303] Visualizing batch 95
+INFO:tensorflow:Visualizing batch 96
+I0418 12:50:05.664988 140044221417216 vis.py:303] Visualizing batch 96
+INFO:tensorflow:Visualizing batch 97
+I0418 12:50:07.237611 140044221417216 vis.py:303] Visualizing batch 97
+INFO:tensorflow:Visualizing batch 98
+I0418 12:50:20.438386 140044221417216 vis.py:303] Visualizing batch 98
+INFO:tensorflow:Visualizing batch 99
+I0418 12:50:22.180982 140044221417216 vis.py:303] Visualizing batch 99
+INFO:tensorflow:Visualizing batch 100
+I0418 12:50:25.084093 140044221417216 vis.py:303] Visualizing batch 100
+INFO:tensorflow:Visualizing batch 101
+I0418 12:50:26.771688 140044221417216 vis.py:303] Visualizing batch 101
+INFO:tensorflow:Visualizing batch 102
+I0418 12:50:28.232195 140044221417216 vis.py:303] Visualizing batch 102
+INFO:tensorflow:Visualizing batch 103
+I0418 12:50:29.820431 140044221417216 vis.py:303] Visualizing batch 103
+INFO:tensorflow:Visualizing batch 104
+I0418 12:50:31.218275 140044221417216 vis.py:303] Visualizing batch 104
+INFO:tensorflow:Visualizing batch 105
+I0418 12:50:32.842840 140044221417216 vis.py:303] Visualizing batch 105
+INFO:tensorflow:Visualizing batch 106
+I0418 12:50:34.353311 140044221417216 vis.py:303] Visualizing batch 106
+INFO:tensorflow:Visualizing batch 107
+I0418 12:50:35.728321 140044221417216 vis.py:303] Visualizing batch 107
+INFO:tensorflow:Visualizing batch 108
+I0418 12:50:37.389354 140044221417216 vis.py:303] Visualizing batch 108
+INFO:tensorflow:Visualizing batch 109
+I0418 12:50:41.119729 140044221417216 vis.py:303] Visualizing batch 109
+INFO:tensorflow:Visualizing batch 110
+I0418 12:50:42.845600 140044221417216 vis.py:303] Visualizing batch 110
+INFO:tensorflow:Visualizing batch 111
+I0418 12:50:44.513772 140044221417216 vis.py:303] Visualizing batch 111
+INFO:tensorflow:Visualizing batch 112
+I0418 12:50:46.112297 140044221417216 vis.py:303] Visualizing batch 112
+INFO:tensorflow:Visualizing batch 113
+I0418 12:50:47.595080 140044221417216 vis.py:303] Visualizing batch 113
+INFO:tensorflow:Visualizing batch 114
+I0418 12:50:49.310231 140044221417216 vis.py:303] Visualizing batch 114
+INFO:tensorflow:Visualizing batch 115
+I0418 12:50:50.785290 140044221417216 vis.py:303] Visualizing batch 115
+INFO:tensorflow:Visualizing batch 116
+I0418 12:50:52.425905 140044221417216 vis.py:303] Visualizing batch 116
+INFO:tensorflow:Visualizing batch 117
+I0418 12:50:54.654523 140044221417216 vis.py:303] Visualizing batch 117
+INFO:tensorflow:Visualizing batch 118
+I0418 12:50:56.093641 140044221417216 vis.py:303] Visualizing batch 118
+INFO:tensorflow:Visualizing batch 119
+I0418 12:50:57.571076 140044221417216 vis.py:303] Visualizing batch 119
+INFO:tensorflow:Visualizing batch 120
+I0418 12:50:59.142467 140044221417216 vis.py:303] Visualizing batch 120
+INFO:tensorflow:Visualizing batch 121
+I0418 12:51:05.122842 140044221417216 vis.py:303] Visualizing batch 121
+INFO:tensorflow:Visualizing batch 122
+I0418 12:51:06.825671 140044221417216 vis.py:303] Visualizing batch 122
+INFO:tensorflow:Visualizing batch 123
+I0418 12:51:08.456776 140044221417216 vis.py:303] Visualizing batch 123
+INFO:tensorflow:Visualizing batch 124
+I0418 12:51:10.189129 140044221417216 vis.py:303] Visualizing batch 124
+INFO:tensorflow:Visualizing batch 125
+I0418 12:51:11.899110 140044221417216 vis.py:303] Visualizing batch 125
+INFO:tensorflow:Visualizing batch 126
+I0418 12:51:13.423877 140044221417216 vis.py:303] Visualizing batch 126
+INFO:tensorflow:Visualizing batch 127
+I0418 12:51:14.826164 140044221417216 vis.py:303] Visualizing batch 127
+INFO:tensorflow:Visualizing batch 128
+I0418 12:51:16.547877 140044221417216 vis.py:303] Visualizing batch 128
+INFO:tensorflow:Visualizing batch 129
+I0418 12:51:18.180202 140044221417216 vis.py:303] Visualizing batch 129
+INFO:tensorflow:Visualizing batch 130
+I0418 12:51:19.819253 140044221417216 vis.py:303] Visualizing batch 130
+INFO:tensorflow:Visualizing batch 131
+I0418 12:51:23.235894 140044221417216 vis.py:303] Visualizing batch 131
+INFO:tensorflow:Visualizing batch 132
+I0418 12:51:29.647205 140044221417216 vis.py:303] Visualizing batch 132
+INFO:tensorflow:Visualizing batch 133
+I0418 12:51:31.239746 140044221417216 vis.py:303] Visualizing batch 133
+INFO:tensorflow:Visualizing batch 134
+I0418 12:51:32.840904 140044221417216 vis.py:303] Visualizing batch 134
+INFO:tensorflow:Visualizing batch 135
+I0418 12:51:34.478298 140044221417216 vis.py:303] Visualizing batch 135
+INFO:tensorflow:Visualizing batch 136
+I0418 12:51:35.896567 140044221417216 vis.py:303] Visualizing batch 136
+INFO:tensorflow:Visualizing batch 137
+I0418 12:51:37.478431 140044221417216 vis.py:303] Visualizing batch 137
+INFO:tensorflow:Visualizing batch 138
+I0418 12:51:38.934202 140044221417216 vis.py:303] Visualizing batch 138
+INFO:tensorflow:Visualizing batch 139
+I0418 12:51:40.408433 140044221417216 vis.py:303] Visualizing batch 139
+INFO:tensorflow:Visualizing batch 140
+I0418 12:51:41.919646 140044221417216 vis.py:303] Visualizing batch 140
+INFO:tensorflow:Visualizing batch 141
+I0418 12:51:46.743271 140044221417216 vis.py:303] Visualizing batch 141
+INFO:tensorflow:Visualizing batch 142
+I0418 12:51:48.220320 140044221417216 vis.py:303] Visualizing batch 142
+INFO:tensorflow:Visualizing batch 143
+I0418 12:51:50.113560 140044221417216 vis.py:303] Visualizing batch 143
+INFO:tensorflow:Visualizing batch 144
+I0418 12:51:51.971882 140044221417216 vis.py:303] Visualizing batch 144
+INFO:tensorflow:Visualizing batch 145
+I0418 12:51:55.239054 140044221417216 vis.py:303] Visualizing batch 145
+INFO:tensorflow:Visualizing batch 146
+I0418 12:51:56.799087 140044221417216 vis.py:303] Visualizing batch 146
+INFO:tensorflow:Visualizing batch 147
+I0418 12:51:58.370714 140044221417216 vis.py:303] Visualizing batch 147
+INFO:tensorflow:Visualizing batch 148
+I0418 12:51:59.930069 140044221417216 vis.py:303] Visualizing batch 148
+INFO:tensorflow:Visualizing batch 149
+I0418 12:52:01.487944 140044221417216 vis.py:303] Visualizing batch 149
+INFO:tensorflow:Visualizing batch 150
+I0418 12:52:03.001102 140044221417216 vis.py:303] Visualizing batch 150
+INFO:tensorflow:Visualizing batch 151
+I0418 12:52:04.596267 140044221417216 vis.py:303] Visualizing batch 151
+INFO:tensorflow:Visualizing batch 152
+I0418 12:52:06.136788 140044221417216 vis.py:303] Visualizing batch 152
+INFO:tensorflow:Visualizing batch 153
+I0418 12:52:07.720829 140044221417216 vis.py:303] Visualizing batch 153
+INFO:tensorflow:Visualizing batch 154
+I0418 12:52:09.581081 140044221417216 vis.py:303] Visualizing batch 154
+INFO:tensorflow:Visualizing batch 155
+I0418 12:52:11.031724 140044221417216 vis.py:303] Visualizing batch 155
+INFO:tensorflow:Visualizing batch 156
+I0418 12:52:18.811773 140044221417216 vis.py:303] Visualizing batch 156
+INFO:tensorflow:Visualizing batch 157
+I0418 12:52:20.456222 140044221417216 vis.py:303] Visualizing batch 157
+INFO:tensorflow:Visualizing batch 158
+I0418 12:52:21.997542 140044221417216 vis.py:303] Visualizing batch 158
+INFO:tensorflow:Visualizing batch 159
+I0418 12:52:23.584834 140044221417216 vis.py:303] Visualizing batch 159
+INFO:tensorflow:Visualizing batch 160
+I0418 12:52:25.140202 140044221417216 vis.py:303] Visualizing batch 160
+INFO:tensorflow:Visualizing batch 161
+I0418 12:52:26.779995 140044221417216 vis.py:303] Visualizing batch 161
+INFO:tensorflow:Visualizing batch 162
+I0418 12:52:28.381304 140044221417216 vis.py:303] Visualizing batch 162
+INFO:tensorflow:Visualizing batch 163
+I0418 12:52:29.879400 140044221417216 vis.py:303] Visualizing batch 163
+INFO:tensorflow:Visualizing batch 164
+I0418 12:52:32.019056 140044221417216 vis.py:303] Visualizing batch 164
+INFO:tensorflow:Visualizing batch 165
+I0418 12:52:33.569910 140044221417216 vis.py:303] Visualizing batch 165
+INFO:tensorflow:Visualizing batch 166
+I0418 12:52:35.288174 140044221417216 vis.py:303] Visualizing batch 166
+INFO:tensorflow:Visualizing batch 167
+I0418 12:52:36.968386 140044221417216 vis.py:303] Visualizing batch 167
+INFO:tensorflow:Visualizing batch 168
+I0418 12:52:39.823752 140044221417216 vis.py:303] Visualizing batch 168
+INFO:tensorflow:Visualizing batch 169
+I0418 12:52:41.300781 140044221417216 vis.py:303] Visualizing batch 169
+INFO:tensorflow:Visualizing batch 170
+I0418 12:52:42.781488 140044221417216 vis.py:303] Visualizing batch 170
+INFO:tensorflow:Visualizing batch 171
+I0418 12:52:44.136928 140044221417216 vis.py:303] Visualizing batch 171
+INFO:tensorflow:Visualizing batch 172
+I0418 12:52:45.534609 140044221417216 vis.py:303] Visualizing batch 172
+INFO:tensorflow:Visualizing batch 173
+I0418 12:52:47.147193 140044221417216 vis.py:303] Visualizing batch 173
+INFO:tensorflow:Visualizing batch 174
+I0418 12:52:48.648964 140044221417216 vis.py:303] Visualizing batch 174
+INFO:tensorflow:Visualizing batch 175
+I0418 12:52:50.248804 140044221417216 vis.py:303] Visualizing batch 175
+INFO:tensorflow:Visualizing batch 176
+I0418 12:52:51.752054 140044221417216 vis.py:303] Visualizing batch 176
+INFO:tensorflow:Visualizing batch 177
+I0418 12:52:56.953453 140044221417216 vis.py:303] Visualizing batch 177
+INFO:tensorflow:Visualizing batch 178
+I0418 12:52:58.593607 140044221417216 vis.py:303] Visualizing batch 178
+INFO:tensorflow:Visualizing batch 179
+I0418 12:53:00.506242 140044221417216 vis.py:303] Visualizing batch 179
+INFO:tensorflow:Visualizing batch 180
+I0418 12:53:01.946950 140044221417216 vis.py:303] Visualizing batch 180
+INFO:tensorflow:Visualizing batch 181
+I0418 12:53:03.398877 140044221417216 vis.py:303] Visualizing batch 181
+INFO:tensorflow:Visualizing batch 182
+I0418 12:53:04.879946 140044221417216 vis.py:303] Visualizing batch 182
+INFO:tensorflow:Visualizing batch 183
+I0418 12:53:06.326951 140044221417216 vis.py:303] Visualizing batch 183
+INFO:tensorflow:Visualizing batch 184
+I0418 12:53:07.794710 140044221417216 vis.py:303] Visualizing batch 184
+INFO:tensorflow:Visualizing batch 185
+I0418 12:53:09.213804 140044221417216 vis.py:303] Visualizing batch 185
+INFO:tensorflow:Visualizing batch 186
+I0418 12:53:10.794309 140044221417216 vis.py:303] Visualizing batch 186
+INFO:tensorflow:Visualizing batch 187
+I0418 12:53:12.218567 140044221417216 vis.py:303] Visualizing batch 187
+INFO:tensorflow:Visualizing batch 188
+I0418 12:53:13.879842 140044221417216 vis.py:303] Visualizing batch 188
+INFO:tensorflow:Visualizing batch 189
+I0418 12:53:15.615962 140044221417216 vis.py:303] Visualizing batch 189
+INFO:tensorflow:Visualizing batch 190
+I0418 12:53:17.312900 140044221417216 vis.py:303] Visualizing batch 190
+INFO:tensorflow:Visualizing batch 191
+I0418 12:53:18.891928 140044221417216 vis.py:303] Visualizing batch 191
+INFO:tensorflow:Visualizing batch 192
+I0418 12:53:23.037611 140044221417216 vis.py:303] Visualizing batch 192
+INFO:tensorflow:Visualizing batch 193
+I0418 12:53:24.770245 140044221417216 vis.py:303] Visualizing batch 193
+INFO:tensorflow:Visualizing batch 194
+I0418 12:53:26.238845 140044221417216 vis.py:303] Visualizing batch 194
+INFO:tensorflow:Visualizing batch 195
+I0418 12:53:33.775079 140044221417216 vis.py:303] Visualizing batch 195
+INFO:tensorflow:Visualizing batch 196
+I0418 12:53:35.536586 140044221417216 vis.py:303] Visualizing batch 196
+INFO:tensorflow:Visualizing batch 197
+I0418 12:53:39.644400 140044221417216 vis.py:303] Visualizing batch 197
+INFO:tensorflow:Visualizing batch 198
+I0418 12:53:41.308229 140044221417216 vis.py:303] Visualizing batch 198
+INFO:tensorflow:Visualizing batch 199
+I0418 12:53:49.394687 140044221417216 vis.py:303] Visualizing batch 199
+INFO:tensorflow:Visualizing batch 200
+I0418 12:53:52.440825 140044221417216 vis.py:303] Visualizing batch 200
+INFO:tensorflow:Visualizing batch 201
+I0418 12:53:53.915862 140044221417216 vis.py:303] Visualizing batch 201
+INFO:tensorflow:Visualizing batch 202
+I0418 12:53:55.511353 140044221417216 vis.py:303] Visualizing batch 202
+INFO:tensorflow:Visualizing batch 203
+I0418 12:53:57.110795 140044221417216 vis.py:303] Visualizing batch 203
+INFO:tensorflow:Visualizing batch 204
+I0418 12:53:58.819807 140044221417216 vis.py:303] Visualizing batch 204
+INFO:tensorflow:Visualizing batch 205
+I0418 12:54:00.380448 140044221417216 vis.py:303] Visualizing batch 205
+INFO:tensorflow:Visualizing batch 206
+I0418 12:54:01.883379 140044221417216 vis.py:303] Visualizing batch 206
+INFO:tensorflow:Visualizing batch 207
+I0418 12:54:03.333587 140044221417216 vis.py:303] Visualizing batch 207
+INFO:tensorflow:Visualizing batch 208
+I0418 12:54:04.902067 140044221417216 vis.py:303] Visualizing batch 208
+INFO:tensorflow:Visualizing batch 209
+I0418 12:54:06.511878 140044221417216 vis.py:303] Visualizing batch 209
+INFO:tensorflow:Visualizing batch 210
+I0418 12:54:08.348493 140044221417216 vis.py:303] Visualizing batch 210
+INFO:tensorflow:Visualizing batch 211
+I0418 12:54:10.134000 140044221417216 vis.py:303] Visualizing batch 211
+INFO:tensorflow:Visualizing batch 212
+I0418 12:54:11.602409 140044221417216 vis.py:303] Visualizing batch 212
+INFO:tensorflow:Visualizing batch 213
+I0418 12:54:13.176218 140044221417216 vis.py:303] Visualizing batch 213
+INFO:tensorflow:Visualizing batch 214
+I0418 12:54:14.539685 140044221417216 vis.py:303] Visualizing batch 214
+INFO:tensorflow:Visualizing batch 215
+I0418 12:54:16.967271 140044221417216 vis.py:303] Visualizing batch 215
+INFO:tensorflow:Visualizing batch 216
+I0418 12:54:21.269721 140044221417216 vis.py:303] Visualizing batch 216
+INFO:tensorflow:Visualizing batch 217
+I0418 12:54:22.850158 140044221417216 vis.py:303] Visualizing batch 217
+INFO:tensorflow:Visualizing batch 218
+I0418 12:54:24.317997 140044221417216 vis.py:303] Visualizing batch 218
+INFO:tensorflow:Visualizing batch 219
+I0418 12:54:26.000733 140044221417216 vis.py:303] Visualizing batch 219
+INFO:tensorflow:Visualizing batch 220
+I0418 12:54:27.727225 140044221417216 vis.py:303] Visualizing batch 220
+INFO:tensorflow:Visualizing batch 221
+I0418 12:54:29.298882 140044221417216 vis.py:303] Visualizing batch 221
+INFO:tensorflow:Visualizing batch 222
+I0418 12:54:31.670687 140044221417216 vis.py:303] Visualizing batch 222
+INFO:tensorflow:Visualizing batch 223
+I0418 12:54:37.139138 140044221417216 vis.py:303] Visualizing batch 223
+INFO:tensorflow:Visualizing batch 224
+I0418 12:54:38.610589 140044221417216 vis.py:303] Visualizing batch 224
+INFO:tensorflow:Visualizing batch 225
+I0418 12:54:40.124398 140044221417216 vis.py:303] Visualizing batch 225
+INFO:tensorflow:Visualizing batch 226
+I0418 12:54:49.381961 140044221417216 vis.py:303] Visualizing batch 226
+INFO:tensorflow:Visualizing batch 227
+I0418 12:54:50.919886 140044221417216 vis.py:303] Visualizing batch 227
+INFO:tensorflow:Visualizing batch 228
+I0418 12:54:52.695492 140044221417216 vis.py:303] Visualizing batch 228
+INFO:tensorflow:Visualizing batch 229
+I0418 12:54:54.296472 140044221417216 vis.py:303] Visualizing batch 229
+INFO:tensorflow:Visualizing batch 230
+I0418 12:54:55.728097 140044221417216 vis.py:303] Visualizing batch 230
+INFO:tensorflow:Visualizing batch 231
+I0418 12:54:57.189121 140044221417216 vis.py:303] Visualizing batch 231
+INFO:tensorflow:Visualizing batch 232
+I0418 12:54:58.777844 140044221417216 vis.py:303] Visualizing batch 232
+INFO:tensorflow:Visualizing batch 233
+I0418 12:55:00.253634 140044221417216 vis.py:303] Visualizing batch 233
+INFO:tensorflow:Visualizing batch 234
+I0418 12:55:01.683052 140044221417216 vis.py:303] Visualizing batch 234
+INFO:tensorflow:Visualizing batch 235
+I0418 12:55:03.239251 140044221417216 vis.py:303] Visualizing batch 235
+INFO:tensorflow:Visualizing batch 236
+I0418 12:55:04.722026 140044221417216 vis.py:303] Visualizing batch 236
+INFO:tensorflow:Visualizing batch 237
+I0418 12:55:06.232866 140044221417216 vis.py:303] Visualizing batch 237
+INFO:tensorflow:Visualizing batch 238
+I0418 12:55:07.694755 140044221417216 vis.py:303] Visualizing batch 238
+INFO:tensorflow:Visualizing batch 239
+I0418 12:55:09.642449 140044221417216 vis.py:303] Visualizing batch 239
+INFO:tensorflow:Visualizing batch 240
+I0418 12:55:11.116146 140044221417216 vis.py:303] Visualizing batch 240
+INFO:tensorflow:Visualizing batch 241
+I0418 12:55:12.794937 140044221417216 vis.py:303] Visualizing batch 241
+INFO:tensorflow:Visualizing batch 242
+I0418 12:55:14.324591 140044221417216 vis.py:303] Visualizing batch 242
+INFO:tensorflow:Visualizing batch 243
+I0418 12:55:15.777604 140044221417216 vis.py:303] Visualizing batch 243
+INFO:tensorflow:Visualizing batch 244
+I0418 12:55:17.488225 140044221417216 vis.py:303] Visualizing batch 244
+INFO:tensorflow:Visualizing batch 245
+I0418 12:55:20.859757 140044221417216 vis.py:303] Visualizing batch 245
+INFO:tensorflow:Visualizing batch 246
+I0418 12:55:22.473881 140044221417216 vis.py:303] Visualizing batch 246
+INFO:tensorflow:Visualizing batch 247
+I0418 12:55:24.022001 140044221417216 vis.py:303] Visualizing batch 247
+INFO:tensorflow:Visualizing batch 248
+I0418 12:55:25.575700 140044221417216 vis.py:303] Visualizing batch 248
+INFO:tensorflow:Visualizing batch 249
+I0418 12:55:28.722557 140044221417216 vis.py:303] Visualizing batch 249
+INFO:tensorflow:Visualizing batch 250
+I0418 12:55:31.292558 140044221417216 vis.py:303] Visualizing batch 250
+INFO:tensorflow:Visualizing batch 251
+I0418 12:55:32.682435 140044221417216 vis.py:303] Visualizing batch 251
+INFO:tensorflow:Visualizing batch 252
+I0418 12:55:34.020981 140044221417216 vis.py:303] Visualizing batch 252
+INFO:tensorflow:Visualizing batch 253
+I0418 12:55:35.383064 140044221417216 vis.py:303] Visualizing batch 253
+INFO:tensorflow:Visualizing batch 254
+I0418 12:55:39.406048 140044221417216 vis.py:303] Visualizing batch 254
+INFO:tensorflow:Visualizing batch 255
+I0418 12:55:43.597408 140044221417216 vis.py:303] Visualizing batch 255
+INFO:tensorflow:Visualizing batch 256
+I0418 12:55:45.146187 140044221417216 vis.py:303] Visualizing batch 256
+INFO:tensorflow:Visualizing batch 257
+I0418 12:55:46.590105 140044221417216 vis.py:303] Visualizing batch 257
+INFO:tensorflow:Visualizing batch 258
+I0418 12:55:49.300274 140044221417216 vis.py:303] Visualizing batch 258
+INFO:tensorflow:Visualizing batch 259
+I0418 12:55:53.045682 140044221417216 vis.py:303] Visualizing batch 259
+INFO:tensorflow:Visualizing batch 260
+I0418 12:55:55.469656 140044221417216 vis.py:303] Visualizing batch 260
+INFO:tensorflow:Visualizing batch 261
+I0418 12:55:56.997911 140044221417216 vis.py:303] Visualizing batch 261
+INFO:tensorflow:Visualizing batch 262
+I0418 12:55:58.385848 140044221417216 vis.py:303] Visualizing batch 262
+INFO:tensorflow:Visualizing batch 263
+I0418 12:55:59.889649 140044221417216 vis.py:303] Visualizing batch 263
+INFO:tensorflow:Visualizing batch 264
+I0418 12:56:01.318178 140044221417216 vis.py:303] Visualizing batch 264
+INFO:tensorflow:Visualizing batch 265
+I0418 12:56:02.837128 140044221417216 vis.py:303] Visualizing batch 265
+INFO:tensorflow:Visualizing batch 266
+I0418 12:56:04.175951 140044221417216 vis.py:303] Visualizing batch 266
+INFO:tensorflow:Visualizing batch 267
+I0418 12:56:05.712236 140044221417216 vis.py:303] Visualizing batch 267
+INFO:tensorflow:Visualizing batch 268
+I0418 12:56:07.398451 140044221417216 vis.py:303] Visualizing batch 268
+INFO:tensorflow:Visualizing batch 269
+I0418 12:56:08.846952 140044221417216 vis.py:303] Visualizing batch 269
+INFO:tensorflow:Visualizing batch 270
+I0418 12:56:10.201978 140044221417216 vis.py:303] Visualizing batch 270
+INFO:tensorflow:Visualizing batch 271
+I0418 12:56:11.563042 140044221417216 vis.py:303] Visualizing batch 271
+INFO:tensorflow:Visualizing batch 272
+I0418 12:56:12.912999 140044221417216 vis.py:303] Visualizing batch 272
+INFO:tensorflow:Visualizing batch 273
+I0418 12:56:14.249094 140044221417216 vis.py:303] Visualizing batch 273
+INFO:tensorflow:Visualizing batch 274
+I0418 12:56:15.598515 140044221417216 vis.py:303] Visualizing batch 274
+INFO:tensorflow:Visualizing batch 275
+I0418 12:56:21.561002 140044221417216 vis.py:303] Visualizing batch 275
+INFO:tensorflow:Visualizing batch 276
+I0418 12:56:23.113780 140044221417216 vis.py:303] Visualizing batch 276
+INFO:tensorflow:Visualizing batch 277
+I0418 12:56:24.705869 140044221417216 vis.py:303] Visualizing batch 277
+INFO:tensorflow:Visualizing batch 278
+I0418 12:56:26.280490 140044221417216 vis.py:303] Visualizing batch 278
+INFO:tensorflow:Visualizing batch 279
+I0418 12:56:27.782379 140044221417216 vis.py:303] Visualizing batch 279
+INFO:tensorflow:Visualizing batch 280
+I0418 12:56:30.050861 140044221417216 vis.py:303] Visualizing batch 280
+INFO:tensorflow:Visualizing batch 281
+I0418 12:56:31.551060 140044221417216 vis.py:303] Visualizing batch 281
+INFO:tensorflow:Visualizing batch 282
+I0418 12:56:36.044714 140044221417216 vis.py:303] Visualizing batch 282
+INFO:tensorflow:Visualizing batch 283
+I0418 12:56:44.187034 140044221417216 vis.py:303] Visualizing batch 283
+INFO:tensorflow:Visualizing batch 284
+I0418 12:56:45.840857 140044221417216 vis.py:303] Visualizing batch 284
+INFO:tensorflow:Visualizing batch 285
+I0418 12:56:47.329581 140044221417216 vis.py:303] Visualizing batch 285
+INFO:tensorflow:Visualizing batch 286
+I0418 12:56:48.791667 140044221417216 vis.py:303] Visualizing batch 286
+INFO:tensorflow:Visualizing batch 287
+I0418 12:56:50.389203 140044221417216 vis.py:303] Visualizing batch 287
+INFO:tensorflow:Visualizing batch 288
+I0418 12:56:52.213021 140044221417216 vis.py:303] Visualizing batch 288
+INFO:tensorflow:Visualizing batch 289
+I0418 12:56:53.643469 140044221417216 vis.py:303] Visualizing batch 289
+INFO:tensorflow:Visualizing batch 290
+I0418 12:56:56.182718 140044221417216 vis.py:303] Visualizing batch 290
+INFO:tensorflow:Visualizing batch 291
+I0418 12:56:57.550580 140044221417216 vis.py:303] Visualizing batch 291
+INFO:tensorflow:Visualizing batch 292
+I0418 12:56:58.974176 140044221417216 vis.py:303] Visualizing batch 292
+INFO:tensorflow:Visualizing batch 293
+I0418 12:57:00.377001 140044221417216 vis.py:303] Visualizing batch 293
+INFO:tensorflow:Visualizing batch 294
+I0418 12:57:01.751528 140044221417216 vis.py:303] Visualizing batch 294
+INFO:tensorflow:Visualizing batch 295
+I0418 12:57:03.218513 140044221417216 vis.py:303] Visualizing batch 295
+INFO:tensorflow:Visualizing batch 296
+I0418 12:57:13.129590 140044221417216 vis.py:303] Visualizing batch 296
+INFO:tensorflow:Visualizing batch 297
+I0418 12:57:14.594315 140044221417216 vis.py:303] Visualizing batch 297
+INFO:tensorflow:Visualizing batch 298
+I0418 12:57:16.221817 140044221417216 vis.py:303] Visualizing batch 298
+INFO:tensorflow:Visualizing batch 299
+I0418 12:57:17.595107 140044221417216 vis.py:303] Visualizing batch 299
+INFO:tensorflow:Visualizing batch 300
+I0418 12:57:18.991920 140044221417216 vis.py:303] Visualizing batch 300
+INFO:tensorflow:Visualizing batch 301
+I0418 12:57:20.395216 140044221417216 vis.py:303] Visualizing batch 301
+INFO:tensorflow:Visualizing batch 302
+I0418 12:57:21.894801 140044221417216 vis.py:303] Visualizing batch 302
+INFO:tensorflow:Visualizing batch 303
+I0418 12:57:23.178830 140044221417216 vis.py:303] Visualizing batch 303
+INFO:tensorflow:Visualizing batch 304
+I0418 12:57:24.509258 140044221417216 vis.py:303] Visualizing batch 304
+INFO:tensorflow:Visualizing batch 305
+I0418 12:57:30.672902 140044221417216 vis.py:303] Visualizing batch 305
+INFO:tensorflow:Visualizing batch 306
+I0418 12:57:32.228223 140044221417216 vis.py:303] Visualizing batch 306
+INFO:tensorflow:Visualizing batch 307
+I0418 12:57:33.630041 140044221417216 vis.py:303] Visualizing batch 307
+INFO:tensorflow:Visualizing batch 308
+I0418 12:57:35.082505 140044221417216 vis.py:303] Visualizing batch 308
+INFO:tensorflow:Visualizing batch 309
+I0418 12:57:36.595361 140044221417216 vis.py:303] Visualizing batch 309
+INFO:tensorflow:Visualizing batch 310
+I0418 12:57:38.113898 140044221417216 vis.py:303] Visualizing batch 310
+INFO:tensorflow:Visualizing batch 311
+I0418 12:57:39.584682 140044221417216 vis.py:303] Visualizing batch 311
+INFO:tensorflow:Visualizing batch 312
+I0418 12:57:40.903671 140044221417216 vis.py:303] Visualizing batch 312
+INFO:tensorflow:Visualizing batch 313
+I0418 12:57:42.327133 140044221417216 vis.py:303] Visualizing batch 313
+INFO:tensorflow:Visualizing batch 314
+I0418 12:57:43.886378 140044221417216 vis.py:303] Visualizing batch 314
+INFO:tensorflow:Visualizing batch 315
+I0418 12:57:45.363389 140044221417216 vis.py:303] Visualizing batch 315
+INFO:tensorflow:Visualizing batch 316
+I0418 12:57:46.720736 140044221417216 vis.py:303] Visualizing batch 316
+INFO:tensorflow:Visualizing batch 317
+I0418 12:57:48.071820 140044221417216 vis.py:303] Visualizing batch 317
+INFO:tensorflow:Visualizing batch 318
+I0418 12:57:49.351149 140044221417216 vis.py:303] Visualizing batch 318
+INFO:tensorflow:Visualizing batch 319
+I0418 12:57:51.681772 140044221417216 vis.py:303] Visualizing batch 319
+INFO:tensorflow:Visualizing batch 320
+I0418 12:57:52.994924 140044221417216 vis.py:303] Visualizing batch 320
+INFO:tensorflow:Visualizing batch 321
+I0418 12:57:54.407481 140044221417216 vis.py:303] Visualizing batch 321
+INFO:tensorflow:Visualizing batch 322
+I0418 12:57:55.914136 140044221417216 vis.py:303] Visualizing batch 322
+INFO:tensorflow:Visualizing batch 323
+I0418 12:57:57.597961 140044221417216 vis.py:303] Visualizing batch 323
+INFO:tensorflow:Visualizing batch 324
+I0418 12:57:58.959884 140044221417216 vis.py:303] Visualizing batch 324
+INFO:tensorflow:Visualizing batch 325
+I0418 12:58:00.326111 140044221417216 vis.py:303] Visualizing batch 325
+INFO:tensorflow:Visualizing batch 326
+I0418 12:58:05.813895 140044221417216 vis.py:303] Visualizing batch 326
+INFO:tensorflow:Visualizing batch 327
+I0418 12:58:07.206145 140044221417216 vis.py:303] Visualizing batch 327
+INFO:tensorflow:Visualizing batch 328
+I0418 12:58:08.777582 140044221417216 vis.py:303] Visualizing batch 328
+INFO:tensorflow:Visualizing batch 329
+I0418 12:58:10.171370 140044221417216 vis.py:303] Visualizing batch 329
+INFO:tensorflow:Visualizing batch 330
+I0418 12:58:11.625298 140044221417216 vis.py:303] Visualizing batch 330
+INFO:tensorflow:Visualizing batch 331
+I0418 12:58:13.011940 140044221417216 vis.py:303] Visualizing batch 331
+INFO:tensorflow:Visualizing batch 332
+I0418 12:58:17.157306 140044221417216 vis.py:303] Visualizing batch 332
+INFO:tensorflow:Visualizing batch 333
+I0418 12:58:20.644259 140044221417216 vis.py:303] Visualizing batch 333
+INFO:tensorflow:Visualizing batch 334
+I0418 12:58:22.215732 140044221417216 vis.py:303] Visualizing batch 334
+INFO:tensorflow:Visualizing batch 335
+I0418 12:58:27.767418 140044221417216 vis.py:303] Visualizing batch 335
+INFO:tensorflow:Visualizing batch 336
+I0418 12:58:29.234021 140044221417216 vis.py:303] Visualizing batch 336
+INFO:tensorflow:Visualizing batch 337
+I0418 12:58:30.973565 140044221417216 vis.py:303] Visualizing batch 337
+INFO:tensorflow:Visualizing batch 338
+I0418 12:58:32.574167 140044221417216 vis.py:303] Visualizing batch 338
+INFO:tensorflow:Visualizing batch 339
+I0418 12:58:34.113051 140044221417216 vis.py:303] Visualizing batch 339
+INFO:tensorflow:Visualizing batch 340
+I0418 12:58:35.689652 140044221417216 vis.py:303] Visualizing batch 340
+INFO:tensorflow:Visualizing batch 341
+I0418 12:58:37.227327 140044221417216 vis.py:303] Visualizing batch 341
+INFO:tensorflow:Visualizing batch 342
+I0418 12:58:38.851886 140044221417216 vis.py:303] Visualizing batch 342
+INFO:tensorflow:Visualizing batch 343
+I0418 12:58:40.252889 140044221417216 vis.py:303] Visualizing batch 343
+INFO:tensorflow:Visualizing batch 344
+I0418 12:58:41.866012 140044221417216 vis.py:303] Visualizing batch 344
+INFO:tensorflow:Visualizing batch 345
+I0418 12:58:54.239741 140044221417216 vis.py:303] Visualizing batch 345
+INFO:tensorflow:Visualizing batch 346
+I0418 12:58:55.763717 140044221417216 vis.py:303] Visualizing batch 346
+INFO:tensorflow:Visualizing batch 347
+I0418 12:58:57.329701 140044221417216 vis.py:303] Visualizing batch 347
+INFO:tensorflow:Visualizing batch 348
+I0418 12:58:58.866865 140044221417216 vis.py:303] Visualizing batch 348
+INFO:tensorflow:Visualizing batch 349
+I0418 12:59:00.582201 140044221417216 vis.py:303] Visualizing batch 349
+INFO:tensorflow:Visualizing batch 350
+I0418 12:59:02.005992 140044221417216 vis.py:303] Visualizing batch 350
+INFO:tensorflow:Visualizing batch 351
+I0418 12:59:03.325220 140044221417216 vis.py:303] Visualizing batch 351
+INFO:tensorflow:Visualizing batch 352
+I0418 12:59:04.803359 140044221417216 vis.py:303] Visualizing batch 352
+INFO:tensorflow:Visualizing batch 353
+I0418 12:59:06.346885 140044221417216 vis.py:303] Visualizing batch 353
+INFO:tensorflow:Visualizing batch 354
+I0418 12:59:07.775044 140044221417216 vis.py:303] Visualizing batch 354
+INFO:tensorflow:Visualizing batch 355
+I0418 12:59:09.237843 140044221417216 vis.py:303] Visualizing batch 355
+INFO:tensorflow:Visualizing batch 356
+I0418 12:59:10.551000 140044221417216 vis.py:303] Visualizing batch 356
+INFO:tensorflow:Visualizing batch 357
+I0418 12:59:19.022655 140044221417216 vis.py:303] Visualizing batch 357
+INFO:tensorflow:Visualizing batch 358
+I0418 12:59:20.550519 140044221417216 vis.py:303] Visualizing batch 358
+INFO:tensorflow:Visualizing batch 359
+I0418 12:59:22.004849 140044221417216 vis.py:303] Visualizing batch 359
+INFO:tensorflow:Visualizing batch 360
+I0418 12:59:23.481401 140044221417216 vis.py:303] Visualizing batch 360
+INFO:tensorflow:Visualizing batch 361
+I0418 12:59:25.172520 140044221417216 vis.py:303] Visualizing batch 361
+INFO:tensorflow:Visualizing batch 362
+I0418 12:59:26.749457 140044221417216 vis.py:303] Visualizing batch 362
+INFO:tensorflow:Visualizing batch 363
+I0418 12:59:28.140005 140044221417216 vis.py:303] Visualizing batch 363
+INFO:tensorflow:Visualizing batch 364
+I0418 12:59:29.717705 140044221417216 vis.py:303] Visualizing batch 364
+INFO:tensorflow:Visualizing batch 365
+I0418 12:59:31.122343 140044221417216 vis.py:303] Visualizing batch 365
+INFO:tensorflow:Visualizing batch 366
+I0418 12:59:32.805792 140044221417216 vis.py:303] Visualizing batch 366
+INFO:tensorflow:Visualizing batch 367
+I0418 12:59:34.409731 140044221417216 vis.py:303] Visualizing batch 367
+INFO:tensorflow:Visualizing batch 368
+I0418 12:59:36.199481 140044221417216 vis.py:303] Visualizing batch 368
+INFO:tensorflow:Visualizing batch 369
+I0418 12:59:37.627810 140044221417216 vis.py:303] Visualizing batch 369
+INFO:tensorflow:Visualizing batch 370
+I0418 12:59:39.310095 140044221417216 vis.py:303] Visualizing batch 370
+INFO:tensorflow:Visualizing batch 371
+I0418 12:59:40.977962 140044221417216 vis.py:303] Visualizing batch 371
+INFO:tensorflow:Visualizing batch 372
+I0418 12:59:42.441477 140044221417216 vis.py:303] Visualizing batch 372
+INFO:tensorflow:Visualizing batch 373
+I0418 12:59:44.215401 140044221417216 vis.py:303] Visualizing batch 373
+INFO:tensorflow:Visualizing batch 374
+I0418 12:59:45.754153 140044221417216 vis.py:303] Visualizing batch 374
+INFO:tensorflow:Visualizing batch 375
+I0418 12:59:47.325930 140044221417216 vis.py:303] Visualizing batch 375
+INFO:tensorflow:Visualizing batch 376
+I0418 12:59:48.806668 140044221417216 vis.py:303] Visualizing batch 376
+INFO:tensorflow:Visualizing batch 377
+I0418 12:59:50.734450 140044221417216 vis.py:303] Visualizing batch 377
+INFO:tensorflow:Visualizing batch 378
+I0418 12:59:52.492459 140044221417216 vis.py:303] Visualizing batch 378
+INFO:tensorflow:Visualizing batch 379
+I0418 12:59:54.157857 140044221417216 vis.py:303] Visualizing batch 379
+INFO:tensorflow:Visualizing batch 380
+I0418 12:59:56.056546 140044221417216 vis.py:303] Visualizing batch 380
+INFO:tensorflow:Visualizing batch 381
+I0418 12:59:57.701719 140044221417216 vis.py:303] Visualizing batch 381
+INFO:tensorflow:Visualizing batch 382
+I0418 12:59:59.106783 140044221417216 vis.py:303] Visualizing batch 382
+INFO:tensorflow:Visualizing batch 383
+I0418 13:00:00.636950 140044221417216 vis.py:303] Visualizing batch 383
+INFO:tensorflow:Visualizing batch 384
+I0418 13:00:02.086495 140044221417216 vis.py:303] Visualizing batch 384
+INFO:tensorflow:Visualizing batch 385
+I0418 13:00:03.385657 140044221417216 vis.py:303] Visualizing batch 385
+INFO:tensorflow:Visualizing batch 386
+I0418 13:00:04.922660 140044221417216 vis.py:303] Visualizing batch 386
+INFO:tensorflow:Visualizing batch 387
+I0418 13:00:06.420286 140044221417216 vis.py:303] Visualizing batch 387
+INFO:tensorflow:Visualizing batch 388
+I0418 13:00:07.857469 140044221417216 vis.py:303] Visualizing batch 388
+INFO:tensorflow:Visualizing batch 389
+I0418 13:00:09.470248 140044221417216 vis.py:303] Visualizing batch 389
+INFO:tensorflow:Visualizing batch 390
+I0418 13:00:11.026340 140044221417216 vis.py:303] Visualizing batch 390
+INFO:tensorflow:Visualizing batch 391
+I0418 13:00:12.377664 140044221417216 vis.py:303] Visualizing batch 391
+INFO:tensorflow:Visualizing batch 392
+I0418 13:00:13.773185 140044221417216 vis.py:303] Visualizing batch 392
+INFO:tensorflow:Visualizing batch 393
+I0418 13:00:15.370535 140044221417216 vis.py:303] Visualizing batch 393
+INFO:tensorflow:Visualizing batch 394
+I0418 13:00:16.864181 140044221417216 vis.py:303] Visualizing batch 394
+INFO:tensorflow:Visualizing batch 395
+I0418 13:00:18.461821 140044221417216 vis.py:303] Visualizing batch 395
+INFO:tensorflow:Visualizing batch 396
+I0418 13:00:20.039330 140044221417216 vis.py:303] Visualizing batch 396
+INFO:tensorflow:Visualizing batch 397
+I0418 13:00:21.397370 140044221417216 vis.py:303] Visualizing batch 397
+INFO:tensorflow:Visualizing batch 398
+I0418 13:00:22.810963 140044221417216 vis.py:303] Visualizing batch 398
+INFO:tensorflow:Visualizing batch 399
+I0418 13:00:24.261097 140044221417216 vis.py:303] Visualizing batch 399
+INFO:tensorflow:Visualizing batch 400
+I0418 13:00:26.419487 140044221417216 vis.py:303] Visualizing batch 400
+INFO:tensorflow:Visualizing batch 401
+I0418 13:00:27.855552 140044221417216 vis.py:303] Visualizing batch 401
+INFO:tensorflow:Visualizing batch 402
+I0418 13:00:29.251731 140044221417216 vis.py:303] Visualizing batch 402
+INFO:tensorflow:Visualizing batch 403
+I0418 13:00:30.637236 140044221417216 vis.py:303] Visualizing batch 403
+INFO:tensorflow:Visualizing batch 404
+I0418 13:00:32.146650 140044221417216 vis.py:303] Visualizing batch 404
+INFO:tensorflow:Visualizing batch 405
+I0418 13:00:33.652770 140044221417216 vis.py:303] Visualizing batch 405
+INFO:tensorflow:Visualizing batch 406
+I0418 13:00:35.009963 140044221417216 vis.py:303] Visualizing batch 406
+INFO:tensorflow:Visualizing batch 407
+I0418 13:00:36.401980 140044221417216 vis.py:303] Visualizing batch 407
+INFO:tensorflow:Visualizing batch 408
+I0418 13:00:37.835338 140044221417216 vis.py:303] Visualizing batch 408
+INFO:tensorflow:Visualizing batch 409
+I0418 13:00:42.865356 140044221417216 vis.py:303] Visualizing batch 409
+INFO:tensorflow:Visualizing batch 410
+I0418 13:00:45.536643 140044221417216 vis.py:303] Visualizing batch 410
+INFO:tensorflow:Visualizing batch 411
+I0418 13:00:47.065355 140044221417216 vis.py:303] Visualizing batch 411
+INFO:tensorflow:Visualizing batch 412
+I0418 13:00:48.495389 140044221417216 vis.py:303] Visualizing batch 412
+INFO:tensorflow:Visualizing batch 413
+I0418 13:00:49.913715 140044221417216 vis.py:303] Visualizing batch 413
+INFO:tensorflow:Visualizing batch 414
+I0418 13:00:51.478832 140044221417216 vis.py:303] Visualizing batch 414
+INFO:tensorflow:Visualizing batch 415
+I0418 13:00:52.915885 140044221417216 vis.py:303] Visualizing batch 415
+INFO:tensorflow:Visualizing batch 416
+I0418 13:00:54.344264 140044221417216 vis.py:303] Visualizing batch 416
+INFO:tensorflow:Visualizing batch 417
+I0418 13:00:58.255676 140044221417216 vis.py:303] Visualizing batch 417
+INFO:tensorflow:Visualizing batch 418
+I0418 13:00:59.736606 140044221417216 vis.py:303] Visualizing batch 418
+INFO:tensorflow:Visualizing batch 419
+I0418 13:01:01.165679 140044221417216 vis.py:303] Visualizing batch 419
+INFO:tensorflow:Visualizing batch 420
+I0418 13:01:02.796349 140044221417216 vis.py:303] Visualizing batch 420
